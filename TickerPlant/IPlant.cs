@@ -2,7 +2,9 @@
 {
 	public interface IPlant
 	{
-		void Start(int fakes);
+		void AddTicks(int fakes);
+		void AddTicks(string symbols);
+		void Start();
 		void Stop();
 	}
 }

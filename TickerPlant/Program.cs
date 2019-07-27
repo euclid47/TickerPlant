@@ -16,7 +16,8 @@ namespace TickerPlant
 			ConfigureServices();
 
 			var plant = _serviceProvider.GetService<IPlant>();
-			Task.Factory.StartNew(() => { plant.Start(10); });
+			plant.Start();
+			Task.Factory.StartNew(() => { plant.AddTicks(10); });
 
 			do
 			{
@@ -25,7 +26,7 @@ namespace TickerPlant
 			plant.Stop();
 
 			Console.WriteLine("Done.");
-			Thread.Sleep(5000);
+			Thread.Sleep(2000);
 			Environment.Exit(1);
 		}
 

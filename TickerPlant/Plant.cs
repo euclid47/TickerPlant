@@ -29,10 +29,19 @@ namespace TickerPlant
 			_serializer.Converters.Add(new DecimalJsonConverter());
 		}
 
-		public void Start(int fakes)
+		public void Start()
 		{
 			Task.Factory.StartNew(() => { OutputTicks(); });
+		}
+
+		public void AddTicks(int fakes)
+		{
 			Task.Factory.StartNew(() => { LoadFakers(fakes); });
+		}
+
+		public void AddTicks(string symbols)
+		{
+			Task.Factory.StartNew(() => { LoadFakers(symbols); });
 		}
 
 		public void Stop()
@@ -47,13 +56,26 @@ namespace TickerPlant
 
 		private void OutputTicks()
 		{
-			var count = 0;
 			foreach (var tick in _messages.Ticks.GetConsumingEnumerable())
 			{
-				count++;
-				Console.WriteLine($"{_messages.Ticks.Count}     {count}");
-				//Console.WriteLine(JsonConvert.SerializeObject(tick, new JsonConverter[] { new DecimalJsonConverter() }));
+				Console.WriteLine(JsonConvert.SerializeObject(tick, new JsonConverter[] { new DecimalJsonConverter() }));
 			}
+		}
+
+		private void LoadFakers(string symbols)
+		{
+			var symbolsList = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim());
+
+			foreach (var symbol in GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol)))
+			{
+				var tmp = new TickFaker(symbol, _messages);
+				tmp.Start();
+				_fakers.AddOrUpdate(symbol.Symbol, tmp, (k, v) => tmp);
+			}
+
+			do
+			{
+			} while (!_cancellationTokenSource.IsCancellationRequested);
 		}
 
 		private void LoadFakers(int fakes)
