@@ -6,7 +6,6 @@ using System.Linq;
 using System.Collections.Concurrent;
 using System;
 using System.Threading;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using TickerPlant.Interfaces;
 
@@ -15,7 +14,6 @@ namespace TickerPlant
 	public class Plant : IPlant
 	{
 		private readonly ILogger<Plant> _log;
-		private readonly ITickMessages _messages;
 		private readonly ConcurrentDictionary<string, TickFaker> _fakers;
 		private readonly CancellationTokenSource _cancellationTokenSource;
 		private readonly JsonSerializer _serializer;
@@ -29,12 +27,11 @@ namespace TickerPlant
 			_cancellationTokenSource = new CancellationTokenSource();
 			_serializer = new JsonSerializer();
 			_serializer.Converters.Add(new DecimalJsonConverter());
-			_messages = new TickMessages();
 		}
 
 		public void Start()
 		{
-			Task.Factory.StartNew(() => { OutputTicks(); });
+			
 		}
 
 		public void AddTicks(int fakes)
@@ -68,25 +65,8 @@ namespace TickerPlant
 			_cancellationTokenSource.Cancel();
 		}
 
-		private void OutputTicks()
-		{
-			var handler = TickUpdate;
-
-			foreach (var tick in _messages.Ticks.GetConsumingEnumerable())
-			{
-				handler(this, new TickUpdateEventArgs {Tick = tick});
-			}
-		}
-
 		private void LoadFakers(string symbols)
 		{
-			//Task.Factory.StartNew(() =>
-			//{
-			//	var symbolsList = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim());
-
-			//	LoadFakers(GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol) && !_fakers.Keys.Contains(x.Symbol)).ToList());
-			//});
-
 			var symbolsList = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim());
 
 			LoadFakers(GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol) && !_fakers.Keys.Contains(x.Symbol)).ToList());
@@ -94,10 +74,6 @@ namespace TickerPlant
 
 		private void LoadFakers(int fakes)
 		{
-			//Task.Factory.StartNew(() =>
-			//{
-			//	LoadFakers(GetStockSymbols().Where(x => !_fakers.Keys.Contains(x.Symbol)).Take(fakes).ToList());
-			//});
 			LoadFakers(GetStockSymbols().Where(x => !_fakers.Keys.Contains(x.Symbol)).Take(fakes).ToList());
 		}
 
@@ -105,14 +81,24 @@ namespace TickerPlant
 		{
 			foreach (var stockSymbol in stockSymbols)
 			{
-				var tmp = new TickFaker(_messages);
+				var tmp = new TickFaker();
+				WireEventHandlers(tmp);
 				tmp.Start(stockSymbol);
 				_fakers.AddOrUpdate(stockSymbol.Symbol, tmp, (k, v) => tmp);
 			}
+		}
 
-			//do
-			//{
-			//} while (!_cancellationTokenSource.IsCancellationRequested);
+		private void WireEventHandlers(TickFaker tickFaker)
+		{
+			var handler = new InternalTickHandler(PlantHandler);
+			tickFaker.InternalTick += handler;
+		}
+
+		public void PlantHandler(object sender, InternalTickEventArgs e)
+		{
+			var handler = TickUpdate;
+
+			handler(this, new TickUpdateEventArgs { Tick = e.Tick });
 		}
 
 		private ICollection<StockSymbol> GetStockSymbols()

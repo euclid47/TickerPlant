@@ -8,17 +8,16 @@ namespace TickerPlant
 {
 	internal class TickFaker : ITickFaker
 	{
-		private readonly CancellationTokenSource _cancellationTokenSource;
-		private readonly ITickMessages _messages;
-		private readonly Random _rng;
+		public event InternalTickHandler InternalTick;
 
+		private readonly CancellationTokenSource _cancellationTokenSource;
+		private readonly Random _rng;
 		private Tick Tick;
 
-		public TickFaker(ITickMessages messages)
+		public TickFaker()
 		{
 			_cancellationTokenSource = new CancellationTokenSource();
-			_messages = messages;
-			_rng = new Random(DateTime.UtcNow.Millisecond);
+			_rng = new Random(DateTime.UtcNow.Millisecond);	
 		}
 
 		public void Start(StockSymbol initialTick)
@@ -56,9 +55,9 @@ namespace TickerPlant
 			do
 			{
 				Tick = GetNextTick(Tick);
-				_messages.Ticks.Add(Tick);
-
+				InternalTick(this, new InternalTickEventArgs {Tick = Tick});
 				Thread.Sleep(NextInt(DotNetEnv.Env.GetInt("min",100), DotNetEnv.Env.GetInt("max", 5000)));
+
 			} while (!_cancellationTokenSource.IsCancellationRequested);
 		}
 

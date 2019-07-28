@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace TickOff.Models
+﻿namespace TickOff.Models
 {
-	public class TickUpdateEventArgs : EventArgs
+	public class TickUpdateEventArgs : TickEventArgsBase
 	{
-		public Tick Tick { get; set; }
+		
 	}
 }
