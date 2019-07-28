@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
-using TickerPlant.Models;
-using TickerPlant.Services;
+using TickOff.Models;
+using TickOff.Services;
 using System.Linq;
 using System.Collections.Concurrent;
 using System;
@@ -14,23 +14,23 @@ namespace TickerPlant
 	public class Plant : IPlant
 	{
 		private readonly ILogger<Plant> _log;
-		private TickMessages _messages;
+		private readonly ITickMessages _messages;
 		private readonly ConcurrentDictionary<string, TickFaker> _fakers;
 		private readonly CancellationTokenSource _cancellationTokenSource;
 		private readonly JsonSerializer _serializer;
 
-		public Plant(ILogger<Plant> log)
+		public Plant(ILogger<Plant> log, ITickMessages messages)
 		{
 			_log = log;
 			_fakers = new ConcurrentDictionary<string, TickFaker>();
 			_cancellationTokenSource = new CancellationTokenSource();
 			_serializer = new JsonSerializer();
 			_serializer.Converters.Add(new DecimalJsonConverter());
+			_messages = messages;
 		}
 
-		public void Start(TickMessages messages)
+		public void Start()
 		{
-			_messages = messages;
 			Task.Factory.StartNew(() => { OutputTicks(); });
 		}
 
@@ -42,6 +42,11 @@ namespace TickerPlant
 		public void AddTicks(string symbols)
 		{
 			Task.Factory.StartNew(() => { LoadFakers(symbols); });
+		}
+
+		public void RemoveTick(string symbol)
+		{
+
 		}
 
 		public void Stop()
@@ -66,9 +71,9 @@ namespace TickerPlant
 		{
 			var symbolsList = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim());
 
-			foreach (var symbol in GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol)))
+			foreach (var symbol in GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol) && !_fakers.Keys.Contains(x.Symbol)))
 			{
-				var tmp = new TickFaker(symbol, _messages);
+				var tmp = new TickFaker(symbol);
 				tmp.Start();
 				_fakers.AddOrUpdate(symbol.Symbol, tmp, (k, v) => tmp);
 			}
@@ -82,7 +87,7 @@ namespace TickerPlant
 		{
 			foreach (var symbol in GetStockSymbols().Take(fakes))
 			{
-				var tmp = new TickFaker(symbol, _messages);
+				var tmp = new TickFaker(symbol);
 				tmp.Start();
 				_fakers.AddOrUpdate(symbol.Symbol, tmp, (k, v) => tmp);
 			}
