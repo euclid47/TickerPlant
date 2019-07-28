@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace TickerPlant
 {
-	class DecimalJsonConverter : JsonConverter
+	internal class DecimalJsonConverter : JsonConverter
 	{
 		public override bool CanConvert(Type objectType)
 		{

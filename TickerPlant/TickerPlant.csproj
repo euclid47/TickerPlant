@@ -7,24 +7,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Models\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DecimalJsonConverter.cs" />
+    <Compile Remove="IPlant.cs" />
+    <Compile Remove="ObjectExtensions.cs" />
+    <Compile Remove="Plant.cs" />
+    <Compile Remove="TickFaker.cs" />
+    <Compile Remove="TickMessages.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="server.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="1.2.0" />
-    <PackageReference Include="MediatR" Version="6.0.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="ServiceStack.Text" Version="5.5.0" />
 	<PackageReference Include="Microsoft.AspNetCore.App" />
-	<PackageReference Include="System.IO.Pipelines" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TickOff\TickOff.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update=".env">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="server.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="StockSymbols.txt">

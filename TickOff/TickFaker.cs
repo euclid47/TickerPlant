@@ -1,45 +1,48 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using TickerPlant.Interfaces;
 using TickOff.Models;
 
 namespace TickerPlant
 {
-	public class TickFaker
+	internal class TickFaker : ITickFaker
 	{
 		private readonly CancellationTokenSource _cancellationTokenSource;
-		private readonly TickMessages _messages;
+		private readonly ITickMessages _messages;
+		private readonly Random _rng;
 
 		private Tick Tick;
 
-		public TickFaker(StockSymbol stockSymbol, TickMessages messages)
+		public TickFaker(ITickMessages messages)
+		{
+			_cancellationTokenSource = new CancellationTokenSource();
+			_messages = messages;
+			_rng = new Random(DateTime.UtcNow.Millisecond);
+		}
+
+		public void Start(StockSymbol initialTick)
 		{
 			Tick = new Tick
 			{
-				Ask = stockSymbol.LastSale,
+				Ask = initialTick.LastSale,
 				AskSize = NextInt(0, 10) * 100,
-				ADR = stockSymbol.ADR,
-				Bid = stockSymbol.LastSale,
+				ADR = initialTick.ADR,
+				Bid = initialTick.LastSale,
 				BidSize = NextInt(0, 10) * 100,
-				High = stockSymbol.LastSale,
-				Industry = stockSymbol.Industry,
-				LastPrice = stockSymbol.LastSale,
-				LastSale = stockSymbol.LastSale,
-				Low = stockSymbol.LastSale,
-				Name = stockSymbol.Name,
-				Open = stockSymbol.LastSale,
+				High = initialTick.LastSale,
+				Industry = initialTick.Industry,
+				LastPrice = initialTick.LastSale,
+				Low = initialTick.LastSale,
+				Name = initialTick.Name,
+				Open = initialTick.LastSale,
 				PercentChange = 0,
-				Sector = stockSymbol.Sector,
-				Symbol = stockSymbol.Symbol,
-				Volume = 0
+				Sector = initialTick.Sector,
+				Symbol = initialTick.Symbol,
+				Volume = 0,
+				TimeStamp = DateTime.UtcNow
 			};
-			
-			_cancellationTokenSource = new CancellationTokenSource();
-			_messages = messages;
-		}
 
-		public void Start()
-		{
 			Task.Factory.StartNew(() => { StartTicks(); });
 		}
 
@@ -52,51 +55,51 @@ namespace TickerPlant
 		{
 			do
 			{
-				Tick = GetNextTick();
+				Tick = GetNextTick(Tick);
 				_messages.Ticks.Add(Tick);
 
-				Thread.Sleep(NextInt(10, 5000));
+				Thread.Sleep(NextInt(DotNetEnv.Env.GetInt("min",100), DotNetEnv.Env.GetInt("max", 5000)));
 			} while (!_cancellationTokenSource.IsCancellationRequested);
 		}
 
-		private Tick GetNextTick()
+		private Tick GetNextTick(Tick lastTick)
 		{
-			var result = Tick;
+			var result = lastTick;
 
-			result.LastPrice = ((Tick.Ask + Tick.Bid) / 2) * PriceMultiplier();
+			result.LastPrice = ((lastTick.Ask + lastTick.Bid) / 2) * PriceMultiplier();
 
-			result.Ask = Tick.Ask * PriceMultiplier();
+			result.Ask = lastTick.Ask * PriceMultiplier();
 			result.AskSize = NextInt(0, 10) * 100;
-			result.Bid = Tick.Bid * PriceMultiplier();
+			result.Bid = lastTick.Bid * PriceMultiplier();
 			result.BidSize = NextInt(0, 10) * 100;
 
-			result.High = Tick.High > result.LastPrice ? Tick.High : result.LastPrice;
+			result.High = lastTick.High > result.LastPrice ? lastTick.High : result.LastPrice;
 
-			result.Low = Tick.Low < result.LastPrice ? Tick.Low : result.LastPrice;
-			result.PercentChange = result.LastPrice / Tick.Open;
-			result.Volume += NextInt(Tick.AskSize <= Tick.BidSize ? Tick.AskSize / 100 : Tick.BidSize / 100, Tick.AskSize >= Tick.BidSize ? Tick.AskSize / 100 : Tick.BidSize / 100) * 100;
+			result.Low = lastTick.Low < result.LastPrice ? lastTick.Low : result.LastPrice;
+			result.PercentChange = (result.LastPrice - lastTick.Open) / lastTick.Open;
+			result.Volume += (NextInt(lastTick.AskSize <= lastTick.BidSize ? lastTick.AskSize / 100 : lastTick.BidSize / 100, lastTick.AskSize >= lastTick.BidSize ? lastTick.AskSize / 100 : lastTick.BidSize / 100) * 100) + NextInt(1, 99);
+
+			result.TimeStamp = DateTime.UtcNow;
 
 			return result;
 		}
 
-		private double PriceMultiplier()
+		private decimal PriceMultiplier()
 		{
-			var next = NextDouble(0, .1);
-			var posneg = NextInt(0, 100) % 2 == 0 ? -1 : 1;
-			
-			return posneg == -1 ? 1.0 - next : 1.0 + next;
+			var next = NextDecimal(0, .1);
+			var posneg = NextInt(1, 4) % 2 == 0 ? -1 : 1;
+
+			return posneg == -1 ? 1.0M - next : 1.0M + next;
 		}
 
 		private int NextInt(int min, int max)
 		{
-			var rng = new Random();
-			return rng.Next(min, max);
+			return _rng.Next(min, max);
 		}
 
-		private double NextDouble(double min, double max)
+		private decimal NextDecimal(double min, double max)
 		{
-			var rng = new Random();
-			return rng.NextDouble() * (max - min) + min;
+			return (decimal)(_rng.NextDouble() * (max - min) + min);
 		}
 	}
 }

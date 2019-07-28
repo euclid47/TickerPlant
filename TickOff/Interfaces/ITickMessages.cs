@@ -1,9 +1,9 @@
 ﻿using System.Collections.Concurrent;
 using TickOff.Models;
 
-namespace TickerPlant
+namespace TickerPlant.Interfaces
 {
-	public interface ITickMessages
+	internal interface ITickMessages
 	{
 		BlockingCollection<Tick> Ticks { get; set; }
 	}

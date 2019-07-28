@@ -1,17 +1,8 @@
-﻿using Newtonsoft.Json;
-
-namespace TickOff.Models
+﻿namespace TickOff.Models
 {
-	public class StockSymbol : IStockSymbol
+	internal class StockSymbol : StockSymbolBase
 	{
-		public string Symbol { get; set; }
-		public string Name { get; set; }
-		[JsonIgnore]
-		public double LastSale { get; set; }
-		[JsonIgnore]
-		public double MarketCap { get; set; }
-		public string ADR { get; set; }
-		public string Sector { get; set; }
-		public string Industry { get; set; }
+		public decimal LastSale { get; set; }
+		public decimal MarketCap { get; set; }
 	}
 }

@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ServerEventTicker.Services.AppEventService;
 using ServiceStack;
 using ServiceStack.Configuration;
 using TickerPlant;
+using TickerPlant.Interfaces;
 
 namespace ServerEventTicker
 {
@@ -35,8 +37,7 @@ namespace ServerEventTicker
 			});
 
 			services.AddLogging(configure => { configure.AddConsole(); });
-			services.AddSingleton<ITickMessages, TickMessages>();
-			services.AddSingleton<>();
+			services.AddSingleton<IPlant, Plant>();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}

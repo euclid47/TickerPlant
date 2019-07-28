@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using TickOff.Models;
 using System.IO;
 using System.Linq;
+using TickOff.Interfaces;
 
 namespace TickOff.Services
 {
-	public class StockSymbolReader : IDisposable
+	internal class StockSymbolReader : IDisposable, IStockSymbolReader
 	{
 		public ICollection<StockSymbol> GetStockSymbols(bool hasHeaders = true)
 		{
@@ -45,11 +46,11 @@ namespace TickOff.Services
 									tmp.Name = lineList[i];
 									break;
 								case 2:
-									if (double.TryParse(lineList[i], out var lastSale))
-										tmp.LastSale = lastSale;
+									if (decimal.TryParse(lineList[i], out var lastSale))
+										tmp.LastSale = lastSale == 0 ? 0.01M : lastSale;
 									break;
 								case 3:
-									if(double.TryParse(lineList[i], out var marketCap))
+									if(decimal.TryParse(lineList[i], out var marketCap))
 										tmp.MarketCap = marketCap;
 									break;
 								case 4:

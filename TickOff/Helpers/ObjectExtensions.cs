@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace TickOff
 {
-	public static class ObjectExtensions
+	internal static class ObjectExtensions
 	{
 		public static string ToApplicationPath(this string fileName)
 		{
