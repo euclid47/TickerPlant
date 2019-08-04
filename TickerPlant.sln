@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickOff", "TickOff\TickOff.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerEventTicker", "ServerEventTicker\ServerEventTicker.csproj", "{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubCrawl", "PubCrawl\PubCrawl.csproj", "{567EE169-1C45-45FA-9E3E-756189B6CC83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567EE169-1C45-45FA-9E3E-756189B6CC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567EE169-1C45-45FA-9E3E-756189B6CC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567EE169-1C45-45FA-9E3E-756189B6CC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567EE169-1C45-45FA-9E3E-756189B6CC83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

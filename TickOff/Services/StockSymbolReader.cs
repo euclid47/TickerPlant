@@ -65,8 +65,10 @@ namespace TickOff.Services
 							}
 						}
 
-						if (!tmp.Symbol.IsEmpty())
+						if (!tmp.Symbol.IsEmpty() && tmp.LastSale > 0)
 							result.Add(tmp);
+
+						sr.DiscardBufferedData();
 					}
 				}
 			}
