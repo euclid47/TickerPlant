@@ -13,7 +13,6 @@ namespace TickerPlant
 	{
 		private static IServiceProvider _serviceProvider;
 		private static ILogger<Program> _log;
-		//private static TickMessages tickMessages;
 
 		public static Task Main(string[] args)
 		{

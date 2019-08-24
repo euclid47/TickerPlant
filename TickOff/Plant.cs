@@ -105,7 +105,7 @@ namespace TickerPlant
 		{
 			using (var reader = new StockSymbolReader())
 			{
-				return reader.GetStockSymbols().OrderBy(x => Guid.NewGuid()).ToList();
+				return reader.StockSymbols.OrderBy(x => Guid.NewGuid()).ToList();
 			}
 		}
 	}
