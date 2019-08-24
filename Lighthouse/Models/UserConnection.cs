@@ -89,7 +89,10 @@ namespace Lighthouse.Models
 
 		private async void SendMessage(ArraySegment<byte> message)
 		{
-			await _webSocket.SendAsync(new ArraySegment<byte>(message.Array, 0, message.Array.Length), WebSocketMessageType.Text, true, _cancellationToken);
+			if (!_webSocket.CloseStatus.HasValue)
+			{
+				await _webSocket.SendAsync(new ArraySegment<byte>(message.Array, 0, message.Array.Length), WebSocketMessageType.Text, true, _cancellationToken);
+			}
 		}
 
 		private void SendDisconnect()

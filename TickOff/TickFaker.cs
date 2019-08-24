@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Concurrent;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using TickerPlant.Interfaces;
@@ -10,55 +12,83 @@ namespace TickerPlant
 	{
 		public event InternalTickHandler InternalTick;
 
-		private readonly CancellationTokenSource _cancellationTokenSource;
 		private readonly Random _rng;
-		private Tick Tick;
+		private readonly FakeTickQueue _fakeQueue;
+		private readonly ConcurrentDictionary<string, Tick> _tickDictionary;
 
-		public TickFaker()
+		public TickFaker(FakeTickQueue fakeQueue)
 		{
-			_cancellationTokenSource = new CancellationTokenSource();
-			_rng = new Random(DateTime.UtcNow.Millisecond);	
+			_rng = new Random(DateTime.UtcNow.Millisecond);
+			_tickDictionary = new ConcurrentDictionary<string, Tick>();
+			_fakeQueue = fakeQueue;
 		}
 
-		public void Start(StockSymbol initialTick)
+		public void Start()
 		{
-			Tick = new Tick
+			Task.Factory.StartNew(ReadAddStockSymbolsQueue, _fakeQueue.CancellationToken);
+			Task.Factory.StartNew(StartTicks, _fakeQueue.CancellationToken);
+		}
+
+		public int SymbolCount()
+		{
+			return _tickDictionary.Count;
+		}
+
+		private void ReadAddStockSymbolsQueue()
+		{
+			try
 			{
-				Ask = initialTick.LastSale,
-				AskSize = NextInt(0, 10) * 100,
-				ADR = initialTick.ADR,
-				Bid = initialTick.LastSale,
-				BidSize = NextInt(0, 10) * 100,
-				High = initialTick.LastSale,
-				Industry = initialTick.Industry,
-				LastPrice = initialTick.LastSale,
-				Low = initialTick.LastSale,
-				Name = initialTick.Name,
-				Open = initialTick.LastSale,
-				PercentChange = 0,
-				Sector = initialTick.Sector,
-				Symbol = initialTick.Symbol,
-				Volume = 0,
-				TimeStamp = DateTime.UtcNow
-			};
+				foreach (var initialTick in _fakeQueue.AddStockSymbols.GetConsumingEnumerable(_fakeQueue.CancellationToken))
+				{
+					_tickDictionary.TryAdd(initialTick.Symbol, new Tick
+					{
+						Ask = initialTick.LastSale,
+						AskSize = NextInt(0, 10) * 100,
+						ADR = initialTick.ADR,
+						Bid = initialTick.LastSale,
+						BidSize = NextInt(0, 10) * 100,
+						High = initialTick.LastSale,
+						Industry = initialTick.Industry,
+						LastPrice = initialTick.LastSale,
+						Low = initialTick.LastSale,
+						Name = initialTick.Name,
+						Open = initialTick.LastSale,
+						PercentChange = 0,
+						Sector = initialTick.Sector,
+						Symbol = initialTick.Symbol,
+						Volume = 0,
+						TimeStamp = DateTime.UtcNow
+					});
 
-			Task.Factory.StartNew(() => { StartTicks(); });
+					Thread.Sleep(NextInt(1, 100));
+				}
+			}
+			catch (Exception)
+			{
+
+			}	
 		}
 
-		public void Stop()
+		public void StopSymbol(string symbol)
 		{
-			_cancellationTokenSource.Cancel();
+			_tickDictionary.TryRemove(symbol, out _);
 		}
 
 		private void StartTicks()
 		{
 			do
 			{
-				Tick = GetNextTick(Tick);
-				InternalTick(this, new InternalTickEventArgs {Tick = Tick});
+				if (!_tickDictionary.IsEmpty)
+				{
+					var tick = _tickDictionary.OrderBy(x => Guid.NewGuid()).First().Value;
+					tick = GetNextTick(tick);
+					InternalTick(this, new InternalTickEventArgs {Tick = tick});
+					_tickDictionary.TryUpdate(tick.Symbol, tick, tick);
+				}
+
 				Thread.Sleep(NextInt(DotNetEnv.Env.GetInt("min",100), DotNetEnv.Env.GetInt("max", 5000)));
 
-			} while (!_cancellationTokenSource.IsCancellationRequested);
+			} while (!_fakeQueue.CancellationToken.IsCancellationRequested);
 		}
 
 		private Tick GetNextTick(Tick lastTick)

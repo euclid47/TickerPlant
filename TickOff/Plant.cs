@@ -14,19 +14,24 @@ namespace TickerPlant
 	public class Plant : IPlant
 	{
 		private readonly ILogger<Plant> _log;
-		private readonly ConcurrentDictionary<string, TickFaker> _fakers;
+		private readonly ConcurrentBag<TickFaker> _fakers;
 		private readonly CancellationTokenSource _cancellationTokenSource;
 		private readonly JsonSerializer _serializer;
+		private readonly FakeTickQueue _fakeQueue;
+		private readonly HashSet<string> _streamingSymbols;
+
 
 		public event EventHandler<TickUpdateEventArgs> TickUpdate;
 
 		public Plant(ILogger<Plant> log)
 		{
 			_log = log;
-			_fakers = new ConcurrentDictionary<string, TickFaker>();
+			_fakers = new ConcurrentBag<TickFaker>();
 			_cancellationTokenSource = new CancellationTokenSource();
 			_serializer = new JsonSerializer();
 			_serializer.Converters.Add(new DecimalJsonConverter());
+			_fakeQueue = new FakeTickQueue(_cancellationTokenSource.Token);
+			_streamingSymbols = new HashSet<string>();
 		}
 
 		public void Start()
@@ -36,55 +41,63 @@ namespace TickerPlant
 
 		public void AddTicks(int fakes)
 		{
-			LoadFakers(fakes);
+			LoadFakers(GetStockSymbols().Where(x => !_streamingSymbols.Contains(x.Symbol)).Take(fakes).ToList());
 		}
 
 		public void AddTicks(string symbols)
 		{
-			LoadFakers(symbols);
+			var newSymbols = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim()).Distinct().ToList();
+			newSymbols = newSymbols.Where(x => !_streamingSymbols.Contains(x)).ToList();
+
+			newSymbols.ForEach(x => _streamingSymbols.Add(x));
+
+			var newStockSymbols = GetStockSymbols().Where(x => newSymbols.Contains(x.Symbol)).ToList();
+
+			LoadFakers(newStockSymbols);
+
+			newStockSymbols = null;
+			newSymbols = null;
 		}
 
 		public void RemoveTick(string symbol)
 		{
-			if (_fakers.TryGetValue(symbol.ToUpper().Trim(), out var faker))
+			if (_streamingSymbols.Contains(symbol))
 			{
-				faker.Stop();
-				_fakers.Remove(symbol.ToUpper().Trim(), out _);
+				StopSymbol(symbol);
+				_streamingSymbols.Remove(symbol);
 			}
 		}
 
 		public void Stop()
 		{
-			foreach (var kvp in _fakers)
+			foreach (var symbol in _streamingSymbols)
 			{
-				kvp.Value.Stop();
+				StopSymbol(symbol);
 			}
 
-			_fakers.Clear();
-
 			_cancellationTokenSource.Cancel();
+			_fakers.Clear();
+			_streamingSymbols.Clear();
 		}
 
-		private void LoadFakers(string symbols)
+		private void StopSymbol(string symbol)
 		{
-			var symbolsList = symbols.Split(",").ToList().Select(x => x.ToUpper().Trim());
-
-			LoadFakers(GetStockSymbols().Where(x => symbolsList.Contains(x.Symbol) && !_fakers.Keys.Contains(x.Symbol)).ToList());
+			_fakers.AsParallel().ForAll(x => x.StopSymbol(symbol));
 		}
 
-		private void LoadFakers(int fakes)
-		{
-			LoadFakers(GetStockSymbols().Where(x => !_fakers.Keys.Contains(x.Symbol)).Take(fakes).ToList());
-		}
-
-		private void LoadFakers(ICollection<StockSymbol> stockSymbols)
+		private void LoadFakers(List<StockSymbol> stockSymbols)
 		{
 			foreach (var stockSymbol in stockSymbols)
 			{
-				var tmp = new TickFaker();
-				WireEventHandlers(tmp);
-				tmp.Start(stockSymbol);
-				_fakers.AddOrUpdate(stockSymbol.Symbol, tmp, (k, v) => tmp);
+				if (_fakers.Count == 0 || _fakers.Count * 4 < _streamingSymbols.Count)
+				{
+					var tmp = new TickFaker(_fakeQueue);
+					WireEventHandlers(tmp);
+					tmp.Start();
+					_fakers.Add(tmp);
+				}
+
+				_fakeQueue.AddStockSymbols.Add(stockSymbol);
 			}
 		}
 
