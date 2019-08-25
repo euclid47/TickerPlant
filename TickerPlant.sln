@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerPlant", "TickerPlant\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickOff", "TickOff\TickOff.csproj", "{42EFDBE7-1D1C-4F2A-B440-402696757DD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerEventTicker", "ServerEventTicker\ServerEventTicker.csproj", "{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glinter", "Glinter\Glinter.csproj", "{63A09341-9704-4403-8DC2-B32106F87360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{42EFDBE7-1D1C-4F2A-B440-402696757DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42EFDBE7-1D1C-4F2A-B440-402696757DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42EFDBE7-1D1C-4F2A-B440-402696757DD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CF7E7C7-273E-4E0D-B19F-D1B913A77146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A09341-9704-4403-8DC2-B32106F87360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A09341-9704-4403-8DC2-B32106F87360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A09341-9704-4403-8DC2-B32106F87360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A09341-9704-4403-8DC2-B32106F87360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

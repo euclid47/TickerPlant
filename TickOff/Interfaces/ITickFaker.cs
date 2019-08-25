@@ -1,10 +1,9 @@
-﻿using TickOff.Models;
-
-namespace TickerPlant.Interfaces
+﻿namespace TickerPlant.Interfaces
 {
 	internal interface ITickFaker
 	{
-		void Start(StockSymbol initialTick);
-		void Stop();
+		void Start();
+		void StopSymbol(string symbol);
+		int SymbolCount();
 	}
 }

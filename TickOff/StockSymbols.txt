@@ -57,7 +57,6 @@ IOTS	Adesto Technologies Corporation	8.1	240732291.6	n/a	Technology	Semiconducto
 ADIL	"Adial Pharmaceuticals, Inc"	1.87	19118317.13	n/a	Health Care	Major Pharmaceuticals
 ADILW	"Adial Pharmaceuticals, Inc"	0.2	0	n/a	Health Care	Major Pharmaceuticals
 ADMA	ADMA Biologics Inc	3.64	215916813.8	n/a	Health Care	Biotechnology: Biological Products (No Diagnostic Substances)
-ADBE	Adobe Inc.	311.27	1.51103E+11	n/a	Technology	Computer Software: Prepackaged Software
 ADOM	"ADOMANI, Inc."	0.2473	18018392.5	n/a	Capital Goods	Auto Parts:O.E.M.
 ADTN	"ADTRAN, Inc."	11.43	546458607.4	n/a	Public Utilities	Telecommunications Equipment
 ADRO	"Aduro Biotech, Inc."	1.36	108858108.7	n/a	Health Care	Major Pharmaceuticals
@@ -150,8 +149,6 @@ ALLT	Allot Ltd.	7.65	260382223.8	n/a	Technology	Computer Communications Equipmen
 MDRX	"Allscripts Healthcare Solutions, Inc."	10.54	1754257838	n/a	Technology	EDP Services
 ALNY	"Alnylam Pharmaceuticals, Inc."	76.36	8135148368	n/a	Health Care	Major Pharmaceuticals
 AOSL	Alpha and Omega Semiconductor Limited	10.64	258464879.7	n/a	Technology	Semiconductors
-GOOG	Alphabet Inc.	1250.41	8.68089E+11	n/a	Technology	"Computer Software: Programming, Data Processing"
-GOOGL	Alphabet Inc.	1245.22	8.64486E+11	n/a	Technology	"Computer Software: Programming, Data Processing"
 SMCP	AlphaMark Actively Managed Small Cap ETF	23.58	22401023.58	n/a	n/a	n/a
 ATEC	"Alphatec Holdings, Inc."	5.17	242252861.4	n/a	Health Care	Medical/Dental Instruments
 ALPN	"Alpine Immune Sciences, Inc."	4.67	86727284.51	n/a	Health Care	Major Pharmaceuticals
@@ -168,7 +165,6 @@ AMAG	"AMAG Pharmaceuticals, Inc."	8.51	287356650.9	n/a	Health Care	Major Pharmac
 AMAL	Amalgamated Bank	16.91	537257502.4	n/a	Consumer Non-Durables	Textiles
 AMRN	Amarin Corporation plc	18.32	6001077270	327569720	Health Care	Major Pharmaceuticals
 AMRK	"A-Mark Precious Metals, Inc."	12.1	85080545	n/a	Basic Industries	Other Specialty Stores
-AMZN	"Amazon.com, Inc."	1943.05	9.56625E+11	n/a	Consumer Services	Catalog/Specialty Distribution
 AMBC	"Ambac Financial Group, Inc."	17.93	816183300.1	n/a	Finance	Property-Casualty Insurers
 AMBCW	"Ambac Financial Group, Inc."	7.898	0	n/a	Finance	Property-Casualty Insurers
 AMBA	"Ambarella, Inc."	49.59	1623554780	n/a	Technology	Semiconductors
@@ -204,7 +200,6 @@ AMSF	"AMERISAFE, Inc."	65.55	1263474939	n/a	Finance	Property-Casualty Insurers
 ASRV	AmeriServ Financial Inc.	4.1	71275855.5	n/a	Finance	Major Banks
 ASRVP	AmeriServ Financial Inc.	29.95	628950	n/a	Finance	Major Banks
 ATLO	Ames National Corporation	27.67	255452815.7	n/a	Finance	Major Banks
-AMGN	Amgen Inc.	175.34	1.06946E+11	n/a	Health Care	Biotechnology: Biological Products (No Diagnostic Substances)
 FOLD	"Amicus Therapeutics, Inc."	12.72	3243600000	n/a	Health Care	Major Pharmaceuticals
 AMKR	"Amkor Technology, Inc."	8.2	1964942294	n/a	Technology	Semiconductors
 AMPH	"Amphastar Pharmaceuticals, Inc."	19.72	928129076.7	n/a	Health Care	Major Pharmaceuticals
@@ -234,7 +229,6 @@ AINV	Apollo Investment Corporation	16.52	1124490398	n/a	n/a	n/a
 AMEH	"Apollo Medical Holdings, Inc."	14.76	527936801.8	n/a	Consumer Services	Professional Services
 APPF	"AppFolio, Inc."	105.8	3597813005	n/a	Technology	Computer Software: Prepackaged Software
 APPN	Appian Corporation	39.89	2580895166	n/a	Technology	Computer Software: Prepackaged Software
-AAPL	Apple Inc.	207.74	9.55827E+11	n/a	Technology	Computer Manufacturing
 ARCI	"Appliance Recycling Centers of America, Inc."	4.1	6947716.5	n/a	Consumer Services	Home Furnishings
 APDN	Applied DNA Sciences Inc	0.28	10607843.96	n/a	Consumer Services	Other Consumer Services
 APDNW	Applied DNA Sciences Inc	0.0098	0	n/a	Consumer Services	Other Consumer Services
@@ -496,7 +490,6 @@ BCOV	Brightcove Inc.	11.79	451305354.2	n/a	Technology	EDP Services
 BHF	"Brighthouse Financial, Inc."	39.3	4551321092	n/a	Finance	Life Insurance
 BHFAL	"Brighthouse Financial, Inc."	26.79	0	n/a	Finance	Life Insurance
 BHFAP	"Brighthouse Financial, Inc."	27.05	0	n/a	Finance	Life Insurance
-AVGO	Broadcom Inc.	300.92	1.19788E+11	n/a	Technology	Semiconductors
 BVSN	"BroadVision, Inc."	1.25	6323251.25	n/a	Technology	Computer Software: Prepackaged Software
 BYFC	Broadway Financial Corporation	1.9	52971716.9	n/a	Finance	Savings Institutions
 BWEN	"Broadwind Energy, Inc."	2.06	32930552.3	n/a	Capital Goods	Metal Fabrications
@@ -671,11 +664,6 @@ CCIH	ChinaCache International Holdings Ltd.	0.8839	21356332.17	24161480	Technolo
 CNET	"ChinaNet Online Holdings, Inc."	1.3772	22603354.22	n/a	Technology	"Computer Software: Programming, Data Processing"
 IMOS	ChipMOS TECHNOLOGIES INC.	18.1	90416305.6	4995376	Technology	Semiconductors
 CDXC	ChromaDex Corporation	4.65	258176291	n/a	Consumer Durables	Specialty Chemicals
-CHSCL	CHS Inc	27.62	571734000	n/a	Consumer Services	Farming/Seeds/Milling
-CHSCM	CHS Inc	26.38	501220000	n/a	Consumer Services	Farming/Seeds/Milling
-CHSCN	CHS Inc	27.21	457128000	n/a	Consumer Services	Farming/Seeds/Milling
-CHSCO	CHS Inc	27.72	313767531	n/a	Consumer Services	Farming/Seeds/Milling
-CHSCP	CHS Inc	28.2	203949675.6	n/a	Consumer Services	Farming/Seeds/Milling
 CHDN	"Churchill Downs, Incorporated"	120.03	4825149226	n/a	Consumer Services	Services-Misc. Amusement & Recreation
 CHUY	"Chuy&#39;s Holdings, Inc."	23.22	389429307.4	n/a	Consumer Services	Restaurants
 CDTX	"Cidara Therapeutics, Inc."	1.6	42626961.6	n/a	Health Care	Biotechnology: Biological Products (No Diagnostic Substances)
@@ -686,7 +674,6 @@ CINF	Cincinnati Financial Corporation	107.83	17601072353	n/a	Finance	Property-Ca
 CIDM	Cinedigm Corp	1.1942	44995363.76	n/a	Consumer Services	Consumer Electronics/Video Chains
 CTAS	Cintas Corporation	261.69	27028494898	n/a	Consumer Non-Durables	Apparel
 CRUS	"Cirrus Logic, Inc."	48.63	2826227716	n/a	Technology	Semiconductors
-CSCO	"Cisco Systems, Inc."	56.53	2.4199E+11	n/a	Technology	Computer Communications Equipment
 CTRN	"Citi Trends, Inc."	14.74	178099307.5	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 CTXR	"Citius Pharmaceuticals, Inc."	1.18	26049421.58	n/a	Health Care	Major Pharmaceuticals
 CTXRW	"Citius Pharmaceuticals, Inc."	0.13	0	n/a	Health Care	Major Pharmaceuticals
@@ -737,7 +724,6 @@ COLB	"Columbia Banking System, Inc."	37.34	2746571742	n/a	Finance	Major Banks
 CLBK	"Columbia Financial, Inc."	15.59	1802598037	n/a	Finance	Savings Institutions
 COLM	Columbia Sportswear Company	103.92	7097864653	n/a	Consumer Non-Durables	Apparel
 CMCO	Columbus McKinnon Corporation	40.69	953717610.6	n/a	Capital Goods	Construction/Ag Equipment/Trucks
-CMCSA	Comcast Corporation	44.63	2.02566E+11	n/a	Consumer Services	Television Services
 CCNI	"Command Center, Inc."	5.76	83328001.92	n/a	Technology	Professional Services
 CBSH	"Commerce Bancshares, Inc."	60.59	6660516011	n/a	Finance	Major Banks
 CBSHP	"Commerce Bancshares, Inc."	26.1	2391814544	n/a	Finance	Major Banks
@@ -790,7 +776,6 @@ CLDB	Cortland Bancorp	23.25	101929743.8	n/a	Finance	Savings Institutions
 CRVL	CorVel Corp.	92.68	1718861723	n/a	Finance	Specialty Insurers
 CRVS	"Corvus Pharmaceuticals, Inc."	4.34	127278746	n/a	Health Care	Major Pharmaceuticals
 CSGP	"CoStar Group, Inc."	634.26	23176859994	n/a	Miscellaneous	Business Services
-COST	Costco Wholesale Corporation	281.37	1.23743E+11	n/a	Consumer Services	Department/Specialty Retail Stores
 CPAH	CounterPath Corporation	1.51	8984871.46	n/a	Technology	Computer Software: Prepackaged Software
 ICBK	"County Bancorp, Inc."	18.02	120990857.1	n/a	Finance	Major Banks
 COUP	Coupa Software Incorporated	146.17	9029035936	n/a	Technology	Computer Software: Prepackaged Software
@@ -1089,7 +1074,6 @@ EYEN	"Eyenovia, Inc."	3.13	53525272.38	n/a	Health Care	Major Pharmaceuticals
 EYPT	"EyePoint Pharmaceuticals, Inc."	1.45	153853305.6	n/a	Capital Goods	Biotechnology: Laboratory Analytical Instruments
 EZPW	"EZCORP, Inc."	9.84	545581171.4	n/a	Consumer Services	Other Specialty Stores
 FFIV	"F5 Networks, Inc."	153.81	9248441490	n/a	Technology	Computer Communications Equipment
-FB	"Facebook, Inc."	199.75	5.70184E+11	n/a	Technology	"Computer Software: Programming, Data Processing"
 FLMN	Falcon Minerals Corporation	7.9	678282268.5	n/a	Energy	Oil & Gas Production
 FLMNW	Falcon Minerals Corporation	0.75	0	n/a	Energy	Oil & Gas Production
 DAVE	"Famous Dave&#39;s of America, Inc."	4.51	41825311.55	n/a	Consumer Services	Restaurants
@@ -1673,7 +1657,6 @@ INSUW	Insurance Acquisition Corp.	0.93	7202850	n/a	Finance	Business Services
 NTEC	Intec Pharma Ltd.	0.48	15982738.08	n/a	Health Care	Major Pharmaceuticals
 IART	Integra LifeSciences Holdings Corporation	63.27	5408117199	n/a	Health Care	Medical/Dental Instruments
 IMTE	Integrated Media Technology Limited	7.1665	24204036.77	n/a	Consumer Non-Durables	Consumer Electronics/Appliances
-INTC	Intel Corporation	51.59	2.30968E+11	n/a	Technology	Semiconductors
 NTLA	"Intellia Therapeutics, Inc."	18.33	837881255.3	n/a	Health Care	Biotechnology: In Vitro & In Vivo Diagnostic Substances
 IPAR	"Inter Parfums, Inc."	68.62	2158034840	n/a	Consumer Non-Durables	Package Goods/Cosmetics
 ICPT	"Intercept Pharmaceuticals, Inc."	63.99	2082598895	n/a	Health Care	Major Pharmaceuticals
@@ -2119,7 +2102,6 @@ MGPI	"MGP Ingredients, Inc."	69.51	1182704448	n/a	Consumer Non-Durables	Beverage
 MBOT	Microbot Medical Inc. 	6.7	28861362.2	n/a	Health Care	Biotechnology: Biological Products (No Diagnostic Substances)
 MCHP	Microchip Technology Incorporated	98.11	23353588930	n/a	Technology	Semiconductors
 MU	"Micron Technology, Inc."	47.49	52419622469	n/a	Technology	Semiconductors
-MSFT	Microsoft Corporation	141.34	1.08026E+12	n/a	Technology	Computer Software: Prepackaged Software
 MSTR	MicroStrategy Incorporated	123.32	1262744882	n/a	Technology	Computer Software: Prepackaged Software
 MVIS	"Microvision, Inc."	0.67	73849368.46	n/a	Capital Goods	Industrial Machinery/Components
 MICT	"MICT, Inc."	0.7025	7734196.23	n/a	Capital Goods	Electrical Products
@@ -2255,7 +2237,6 @@ UEPS	"Net 1 UEPS Technologies, Inc."	4.05	230104496.3	n/a	Finance	Investment Ban
 NETE	"Net Element, Inc."	3.66	15059414.04	n/a	Technology	EDP Services
 NTAP	"NetApp, Inc."	59.11	14187711474	n/a	Technology	Electronic Components
 NTES	"NetEase, Inc."	238.96	17433568389	72956011	Miscellaneous	Business Services
-NFLX	"Netflix, Inc."	335.78	1.47016E+11	n/a	Consumer Services	Consumer Electronics/Video Chains
 NTGR	"NETGEAR, Inc."	34.25	1078590691	n/a	Public Utilities	Telecommunications Equipment
 NTCT	"NetScout Systems, Inc."	26.27	2034943264	n/a	Technology	EDP Services
 NTWK	NetSol Technologies Inc.	5.85	68288237.55	n/a	Technology	Computer Software: Prepackaged Software
@@ -2326,7 +2307,6 @@ NVTR	Nuvectra Corporation	2.12	37736498.2	n/a	Health Care	Medical/Dental Instrum
 QQQX	Nuveen NASDAQ 100 Dynamic Overwrite Fund	22.82	889246930.3	n/a	n/a	n/a
 NVEE	"NV5 Global, Inc."	82.05	1030967686	n/a	Consumer Services	Other Consumer Services
 NVEC	NVE Corporation	69.43	336458474.3	n/a	Technology	Semiconductors
-NVDA	NVIDIA Corporation	175.07	1.06618E+11	n/a	Technology	Semiconductors
 NXPI	NXP Semiconductors N.V.	102.36	29190503173	n/a	Technology	Semiconductors
 NXTD	NXT-ID Inc.	0.5028	14696446.29	n/a	Consumer Services	Diversified Commercial Services
 NXTDW	NXT-ID Inc.	0.0281	0	n/a	Consumer Services	Diversified Commercial Services
@@ -2465,7 +2445,6 @@ PAVMW	PAVmed Inc.	0.2351	0	n/a	Health Care	Medical/Dental Instruments
 PAVMZ	PAVmed Inc.	0.38	0	n/a	Health Care	Medical/Dental Instruments
 PAYX	"Paychex, Inc."	86.58	31116224901	n/a	Consumer Services	Diversified Commercial Services
 PCTY	Paylocity Holding Corporation	107.11	5674025539	n/a	Technology	Computer Software: Prepackaged Software
-PYPL	"PayPal Holdings, Inc."	115.49	1.35693E+11	n/a	Miscellaneous	Business Services
 PAYS	"Paysign, Inc."	14.03	662663725.4	n/a	Miscellaneous	Business Services
 PBBI	"PB Bancorp, Inc."	11.45	85270485.8	n/a	Finance	Savings Institutions
 CNXN	"PC Connection, Inc."	33.45	881717213.6	n/a	Consumer Services	Catalog/Specialty Distribution
@@ -2497,7 +2476,6 @@ PFIS	Peoples Financial Services Corp. 	45.79	338802682.7	n/a	Finance	Major Banks
 PBCT	"People&#39;s United Financial, Inc."	16.77	6683537635	n/a	Finance	Savings Institutions
 PBCTP	"People&#39;s United Financial, Inc."	27.16	271600000	n/a	Finance	Savings Institutions
 PUB	People&#39;s Utah Bancorp	29.92	562545128.6	n/a	Finance	Major Banks
-PEP	"Pepsico, Inc."	131.22	1.83468E+11	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
 PRCP	"Perceptron, Inc."	4	38577876	n/a	Capital Goods	Electronic Components
 PRFT	"Perficient, Inc."	35.55	1171201113	n/a	Technology	EDP Services
 DCIX	Performance Shipping Inc.	1	26753851	n/a	Transportation	Marine Transportation
@@ -2949,7 +2927,6 @@ STMP	Stamps.com Inc.	47.99	831033040	n/a	Miscellaneous	Business Services
 STND	Standard AVB Financial Corp.	27.51	132423401.5	n/a	Finance	Major Banks
 SBLK	Star Bulk Carriers Corp.	10.4	974441104	n/a	Transportation	Marine Transportation
 SBLKZ	Star Bulk Carriers Corp.	26	0	n/a	Transportation	Marine Transportation
-SBUX	Starbucks Corporation	99.11	1.20042E+11	n/a	Consumer Services	Restaurants
 STFC	State Auto Financial Corporation	34.95	1516944287	n/a	Finance	Property-Casualty Insurers
 MITO	Stealth BioTherapeutics Corp.	12.515	88709223.48	7088232	Health Care	Major Pharmaceuticals
 GASS	"StealthGas, Inc."	4.07	163309498.9	n/a	Transportation	Marine Transportation
@@ -3058,7 +3035,6 @@ TTPH	"Tetraphase Pharmaceuticals, Inc."	0.3547	19247370.57	n/a	Health Care	Major
 TCBI	"Texas Capital Bancshares, Inc."	62.08	3122723514	n/a	Finance	Major Banks
 TCBIL	"Texas Capital Bancshares, Inc."	26.2785	0	n/a	Finance	Major Banks
 TCBIP	"Texas Capital Bancshares, Inc."	26.06	156360000	n/a	Finance	Major Banks
-TXN	Texas Instruments Incorporated	128.16	1.19774E+11	n/a	Technology	Semiconductors
 TXRH	"Texas Roadhouse, Inc."	55.9	4015404719	n/a	Consumer Services	Restaurants
 TFSL	TFS Financial Corporation	18.43	5160221100	n/a	Finance	Savings Institutions
 TGTX	"TG Therapeutics, Inc."	7.33	665822961.6	n/a	Health Care	Major Pharmaceuticals
@@ -3503,7 +3479,6 @@ ZYNE	"Zynerba Pharmaceuticals, Inc."	11.31	238358204.8	n/a	Health Care	Major Pha
 ZYXI	"Zynex, Inc."	8.1	261184686.3	n/a	Health Care	Biotechnology: Electromedical & Electrotherapeutic Apparatus
 ZNGA	Zynga Inc.	6.46	6041926772	n/a	Technology	EDP Services
 DDD	3D Systems Corporation	9.07	1058386019	n/a	Technology	Computer Software: Prepackaged Software
-MMM	3M Company	173.98	1.00287E+11	n/a	Health Care	Medical/Dental Instruments
 WBAI	500.com Limited	11.08	474376361.1	n/a	Consumer Services	Services-Misc. Amusement & Recreation
 WUBA	58.com Inc.	59.1	8780636228	n/a	Technology	"Computer Software: Programming, Data Processing"
 EGHT	8x8 Inc	26.27	2603274670	n/a	Technology	EDP Services
@@ -3514,8 +3489,6 @@ AAC	"AAC Holdings, Inc."	0.9879	24995748	n/a	Health Care	Medical Specialities
 AIR	AAR Corp.	42.27	1472099881	n/a	Capital Goods	Aerospace
 AAN	"Aaron&#39;s,  Inc."	64.08	4336770932	n/a	Technology	Diversified Commercial Services
 ABB	ABB Ltd	18.68	39825057744	n/a	Consumer Durables	Electrical Products
-ABT	Abbott Laboratories	87.75	1.54807E+11	n/a	Health Care	Major Pharmaceuticals
-ABBV	AbbVie Inc.	67.76	1.00174E+11	n/a	Health Care	Major Pharmaceuticals
 ANF	Abercrombie & Fitch Company	18.13	1190923331	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 AGD	Aberdeen Global Dynamic Dividend Fund	9.66	121228962.1	n/a	n/a	n/a
 AWP	Aberdeen Global Premier Properties Fund	6.28	536361932.3	n/a	n/a	n/a
@@ -3524,7 +3497,6 @@ JEQ	"Aberdeen Japan Equity Fund, Inc. "	7.17	96120245.64	n/a	n/a	n/a
 AOD	Aberdeen Total Dynamic Dividend Fund	8.39	884566081.6	n/a	n/a	n/a
 ABM	ABM Industries Incorporated	42.01	2787684582	n/a	Finance	Diversified Commercial Services
 AKR	Acadia Realty Trust	27.71	2293524473	n/a	Consumer Services	Real Estate Investment Trusts
-ACN	Accenture plc	196.93	1.25598E+11	n/a	Miscellaneous	Business Services
 ACCO	Acco Brands Corporation	8.13	829983724.5	n/a	Consumer Durables	Publishing
 ATV	"Acorn International, Inc."	17.45	45037752	n/a	Consumer Services	Other Specialty Stores
 ATU	Actuant Corporation	22.96	1411071800	n/a	Technology	Industrial Machinery/Components
@@ -3578,7 +3550,6 @@ ARE^D	"Alexandria Real Estate Equities, Inc."	38.3101	0	n/a	n/a	n/a
 AQN	Algonquin Power & Utilities Corp.	12.51	6136264412	n/a	Public Utilities	Electric Utilities: Central
 AQNA	Algonquin Power & Utilities Corp.	27.25	0	n/a	Public Utilities	Electric Utilities: Central
 AQNB	Algonquin Power & Utilities Corp.	26.63	0	n/a	Public Utilities	Electric Utilities: Central
-BABA	Alibaba Group Holding Limited	178.74	4.65362E+11	n/a	Miscellaneous	Business Services
 Y	Alleghany Corporation	703.97	10166992393	n/a	Finance	Property-Casualty Insurers
 ATI	Allegheny Technologies Incorporated	22.87	2882417706	n/a	Basic Industries	Steel/Iron Ore
 ALLE	Allegion plc	105.26	9888725014	n/a	Consumer Services	Diversified Commercial Services
@@ -3624,7 +3595,6 @@ AEO	"American Eagle Outfitters, Inc."	17.53	3019088981	n/a	Consumer Services	Clo
 AEP	"American Electric Power Company, Inc."	88.95	43891090394	n/a	Public Utilities	Electric Utilities: Central
 AEP^B	"American Electric Power Company, Inc."	55.21	0	n/a	n/a	n/a
 AEL	American Equity Investment Life Holding Company	26.2	2381065484	n/a	Finance	Life Insurance
-AXP	American Express Company	126.78	1.05186E+11	n/a	Finance	Finance: Consumer Services
 AFG	"American Financial Group, Inc."	103.67	9297898460	n/a	Finance	Property-Casualty Insurers
 AFGB	"American Financial Group, Inc."	27.08	0	n/a	Finance	Property-Casualty Insurers
 AFGE	"American Financial Group, Inc."	25.77	0	n/a	Finance	Property-Casualty Insurers
@@ -3660,7 +3630,6 @@ PLAN	"Anaplan, Inc."	59.9	7736857530	n/a	Technology	Computer Software: Prepackag
 ANDX	Andeavor Logistics LP	34.31	8427580534	n/a	Energy	Natural Gas Distribution
 FINS	Angel Oak Financial Strategies Income Term Trust	20.0779	215837425	n/a	n/a	n/a
 AU	AngloGold Ashanti Limited	18.41	7623686784	n/a	Basic Industries	Precious Metals
-BUD	Anheuser-Busch Inbev SA	100.49	1.96609E+11	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
 AXE	Anixter International Inc.	63.24	2129848893	n/a	Consumer Non-Durables	Telecommunications Equipment
 NLY	Annaly Capital Management Inc	9.6	13979492573	n/a	Consumer Services	Real Estate Investment Trusts
 NLY^D	Annaly Capital Management Inc	25.84	0	n/a	n/a	n/a
@@ -3760,9 +3729,7 @@ AGO	Assured Guaranty Ltd.	43.83	4451521587	n/a	Finance	Property-Casualty Insurer
 AGO^B	Assured Guaranty Ltd.	27.35	0	n/a	n/a	n/a
 AGO^E	Assured Guaranty Ltd.	26.9	0	n/a	n/a	n/a
 AGO^F	Assured Guaranty Ltd.	26.04	0	n/a	n/a	n/a
-AZN	Astrazeneca PLC	43.51	1.14151E+11	n/a	Health Care	Major Pharmaceuticals
 HOME	At Home Group Inc.	6.11	391291707.6	n/a	Consumer Services	Home Furnishings
-T	AT&T Inc.	34.15	2.49227E+11	n/a	Public Utilities	Telecommunications Equipment
 TBB	AT&T Inc.	26.44	0	n/a	Public Utilities	Telecommunications Equipment
 TBC	AT&T Inc.	26.9	0	n/a	Public Utilities	Telecommunications Equipment
 ATTO	Atento S.A.	2.24	168910239.7	n/a	Public Utilities	Telecommunications Equipment
@@ -3825,7 +3792,6 @@ SAN	"Banco Santander, S.A."	4.46	72415119781	n/a	Finance	Commercial Banks
 SAN^B	"Banco Santander, S.A."	22.81	0	n/a	n/a	n/a
 CIB	BanColombia S.A.	51.01	12265698818	n/a	Finance	Commercial Banks
 BXS	BancorpSouth Bank	29.75	2957465886	n/a	n/a	n/a
-BAC	Bank of America Corporation	30.77	2.87472E+11	n/a	Finance	Major Banks
 BAC^A	Bank of America Corporation	26.64	0	n/a	n/a	n/a
 BAC^B	Bank of America Corporation	26.93	0	n/a	n/a	n/a
 BAC^C	Bank of America Corporation	26.23	0	n/a	n/a	n/a
@@ -3878,8 +3844,6 @@ BHLB	"Berkshire Hills Bancorp, Inc."	32.42	1654878900	n/a	Finance	Banks
 BERY	"Berry Global Group, Inc."	54.48	7169568000	n/a	Consumer Non-Durables	Plastic Products
 BBY	"Best Buy Co., Inc."	77.75	20762604291	n/a	Consumer Services	Consumer Electronics/Video Chains
 BEST	BEST Inc.	4.81	1867242000	n/a	Transportation	Trucking Freight/Courier Services
-BHP	BHP Group Limited	56.13	1.41925E+11	n/a	Basic Industries	Precious Metals
-BBL	BHP Group Plc	48.57	1.22809E+11	n/a	Energy	Coal Mining
 BIG	"Big Lots, Inc."	25.58	997821237.9	n/a	Consumer Services	Department/Specialty Retail Stores
 BH	Biglari Holdings Inc.	92.72	210984730.9	n/a	Consumer Services	Restaurants
 BH.A	Biglari Holdings Inc.	n/a	0	n/a	n/a	n/a
@@ -3971,7 +3935,6 @@ DHF	BNY Mellon High Yield Strategies Fund	3.08	223939679	n/a	n/a	n/a
 DMB	"BNY Mellon Municipal Bond Infrastructure Fund, Inc"	13.93	256060995.3	n/a	n/a	n/a
 DSM	"BNY Mellon Strategic Municipal Bond Fund, Inc."	8.26	407791731.3	n/a	n/a	n/a
 LEO	"BNY Mellon Strategic Municipals, Inc."	8.48	527418501.4	n/a	n/a	n/a
-BA	Boeing Company (The)	345	1.94135E+11	n/a	Capital Goods	Aerospace
 BCC	"Boise Cascade, L.L.C."	27.08	1055434443	n/a	Consumer Services	RETAIL: Building Materials
 BCEI	"Bonanza Creek Energy, Inc."	22.07	455181699.8	n/a	Energy	Oil & Gas Production
 BOOT	"Boot Barn Holdings, Inc."	32.82	934598631.5	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
@@ -3984,7 +3947,6 @@ BSX	Boston Scientific Corporation	42.08	58518657452	n/a	Health Care	Medical/Dent
 BOX	"Box, Inc."	16.97	2486113757	n/a	Technology	Computer Software: Prepackaged Software
 BYD	Boyd Gaming Corporation	27	3007364679	n/a	Consumer Services	Hotels/Resorts
 BPMP	BP Midstream Partners LP	16.29	1706532874	n/a	Energy	Natural Gas Distribution
-BP	BP p.l.c.	38.98	1.32481E+11	n/a	Energy	Integrated oil Companies
 BPT	BP Prudhoe Bay Royalty Trust	9.08	194312000	n/a	Energy	Integrated oil Companies
 BRC	Brady Corporation	51.04	2696085920	n/a	Consumer Durables	Miscellaneous manufacturing industries
 BHR	Braemar Hotels & Resorts Inc.	9.22	303181887	n/a	Consumer Services	Real Estate Investment Trusts
@@ -4148,7 +4110,6 @@ CHK^D	Chesapeake Energy Corporation	41.6	0	n/a	n/a	n/a
 CHKR	Chesapeake Granite Wash Trust	1.0397	48605975	n/a	Energy	Oil & Gas Production
 CHSP	Chesapeake Lodging Trust	28.1	1707518868	n/a	Consumer Services	Real Estate Investment Trusts
 CPK	Chesapeake Utilities Corporation	92.81	1521807148	n/a	Public Utilities	Oil & Gas Production
-CVX	Chevron Corporation	123.72	2.35676E+11	n/a	Energy	Integrated oil Companies
 CHWY	"Chewy, Inc."	32.45	12934570000	n/a	Consumer Services	Catalog/Specialty Distribution
 CHS	"Chico&#39;s FAS, Inc."	3.16	372705684.9	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 CIM	Chimera Investment Corporation	19.19	3591315467	n/a	Consumer Services	Real Estate Investment Trusts
@@ -4161,7 +4122,6 @@ CEA	China Eastern Airlines Corporation Ltd.	28.44	8229162718	n/a	Transportation	
 CHN	"China Fund, Inc. (The)"	20.48	221429555.2	n/a	n/a	n/a
 CGA	"China Green Agriculture, Inc."	4.43	17652349.47	n/a	Basic Industries	Agricultural Chemicals
 LFC	China Life Insurance Company Limited	13.08	73940468280	n/a	Finance	Life Insurance
-CHL	China Mobile (Hong Kong) Ltd.	43.48	1.78055E+11	n/a	Public Utilities	Telecommunications Equipment
 COE	China Online Education Group	6.0736	123868041.3	n/a	Consumer Services	Other Consumer Services
 SNP	China Petroleum & Chemical Corporation	65.34	79107928353	n/a	Energy	Integrated oil Companies
 XRF	China Rapid Finance Limited	0.4009	26362867.29	n/a	Finance	Finance: Consumer Services
@@ -4186,7 +4146,6 @@ CIR	"CIRCOR International, Inc."	40	795926120	n/a	Capital Goods	Metal Fabricatio
 CISN	Cision Ltd.	10.65	1579940568	n/a	Technology	Computer Software: Prepackaged Software
 CIT	CIT Group Inc (DEL)	50.76	4809256200	n/a	Finance	Major Banks
 BLW	Citigroup Inc.	15.23	548244514.1	n/a	Finance	Major Banks
-C	Citigroup Inc.	72.16	1.63017E+11	n/a	Finance	Major Banks
 C^J	Citigroup Inc.	28.43	0	n/a	n/a	n/a
 C^K	Citigroup Inc.	28.54	0	n/a	Finance	Major Banks
 C^N	Citigroup Inc.	27.34	0	n/a	Finance	Major Banks
@@ -4224,7 +4183,6 @@ CNXM	CNX Midstream Partners LP	14.5	924095295	n/a	Public Utilities	Natural Gas D
 CEIX	CNX Resources Corporation	22.33	616552334.9	n/a	Energy	Coal Mining
 CNX	CNX Resources Corporation	6.49	1268584938	n/a	Energy	Oil & Gas Production
 KOF	Coca Cola Femsa S.A.B. de C.V.	60.3	12668018528	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
-KO	Coca-Cola Company (The)	54.17	2.31577E+11	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
 CCEP	Coca-Cola European Partners plc	57.33	26754272910	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
 CDE	"Coeur Mining, Inc."	4.66	1035489830	n/a	Basic Industries	Precious Metals
 FOF	"Cohen & Steers Closed-End Opportunity Fund, Inc."	12.9	350998009.2	n/a	n/a	n/a
@@ -4360,7 +4318,6 @@ CVS	CVS Health Corporation	55.54	72151575234	n/a	Health Care	Medical/Nursing Ser
 CELP	"Cypress Energy Partners, L.P."	7.71	92927912.97	n/a	Energy	Oilfield Services/Equipment
 DHI	"D.R. Horton, Inc."	44.5	16606374898	n/a	Capital Goods	Homebuilding
 DAN	Dana Incorporated	19.51	2807738377	n/a	Capital Goods	Auto Parts:O.E.M.
-DHR	Danaher Corporation	142.28	1.02067E+11	n/a	Capital Goods	Industrial Machinery/Components
 DHR^A	Danaher Corporation	1145.9	0	n/a	n/a	n/a
 DAC	Danaos Corporation	8.53	131133344.8	n/a	Transportation	Marine Transportation
 DQ	DAQO New Energy Corp.	43.1	572419289	n/a	Technology	Semiconductors
@@ -4513,7 +4470,6 @@ ESTC	Elastic N.V.	102.59	7730572913	n/a	Technology	Computer Software: Prepackage
 EGO	Eldorado Gold Corporation	7.88	1251357569	n/a	Basic Industries	Precious Metals
 ESI	Element Solutions Inc.	10.22	2632198017	n/a	Basic Industries	Major Chemicals
 ELVT	"Elevate Credit, Inc."	4.21	182697947.3	n/a	Finance	Finance: Consumer Services
-LLY	Eli Lilly and Company	108.27	1.05112E+11	n/a	Health Care	Major Pharmaceuticals
 EFC	Ellington Financial Inc.	17.92	533044305.9	n/a	Finance	Real Estate
 EARN	Ellington Residential Mortgage REIT	11.33	141252277	n/a	Consumer Services	Real Estate Investment Trusts
 AKO.A	Embotelladora Andina S.A.	n/a	0	n/a	n/a	n/a
@@ -4608,7 +4564,6 @@ EXC	Exelon Corporation	45.82	44489152556	n/a	Public Utilities	Power Generation
 EXPR	"Express, Inc."	2.37	159413151.2	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 EXTN	Exterran Corporation	12.56	456267572.2	n/a	Technology	Diversified Commercial Services
 EXR	Extra Space Storage Inc	110.26	14053039890	n/a	Consumer Services	Real Estate Investment Trusts
-XOM	Exxon Mobil Corporation	74.81	3.16679E+11	n/a	Energy	Integrated oil Companies
 FNB	F.N.B. Corporation	12.07	3920422071	n/a	Finance	Major Banks
 FNB^E	F.N.B. Corporation	29.07	0	n/a	n/a	n/a
 FN	Fabrinet	54.57	2009993072	n/a	Public Utilities	Telecommunications Equipment
@@ -4690,7 +4645,6 @@ FLS	Flowserve Corporation	51.9	6806081818	n/a	Capital Goods	Fluid Controls
 FLR	Fluor Corporation	32.95	4610605095	n/a	Basic Industries	Military/Government/Technical
 FLY	Fly Leasing Limited	17.28	560777938.6	n/a	n/a	n/a
 FMC	FMC Corporation	85.57	11265953668	n/a	Basic Industries	Major Chemicals
-FMX	Fomento Economico Mexicano S.A.B. de C.V.	91.6	1.63883E+11	n/a	Consumer Non-Durables	Beverages (Production/Distribution)
 FL	"Foot Locker, Inc."	43.24	4743478764	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 F	Ford Motor Company	9.57	39064740000	n/a	Capital Goods	Auto Manufacturing
 F^B	Ford Motor Company	26.65	0	n/a	n/a	n/a
@@ -4788,7 +4742,6 @@ GIX~	"GigCapital2, Inc."	0.19	0	n/a	n/a	n/a
 GIL	"Gildan Activewear, Inc."	39.38	8021048196	n/a	Consumer Non-Durables	Apparel
 GLT	Glatfelter	16.95	746786947.7	n/a	Basic Industries	Paper
 GKOS	Glaukos Corporation	76.24	2775362128	n/a	Health Care	Medical/Dental Instruments
-GSK	GlaxoSmithKline PLC	41.91	1.04527E+11	n/a	Health Care	Major Pharmaceuticals
 CO	Global Cord Blood Corporation	5.42	658806826.5	n/a	Finance	Business Services
 GMRE	Global Medical REIT Inc.	10.3	355918755.7	n/a	Consumer Services	Real Estate Investment Trusts
 GMRE^A	Global Medical REIT Inc.	25.7786	0	n/a	n/a	n/a
@@ -4884,7 +4837,6 @@ HCHC	"HC2 Holdings, Inc."	1.98	90345922.92	n/a	Capital Goods	Metal Fabrications
 HCA	"HCA Healthcare, Inc."	145.06	49655111444	n/a	Health Care	Hospital/Nursing Management
 HCI	"HCI Group, Inc."	40.31	342744804.4	n/a	Finance	Property-Casualty Insurers
 HCP	"HCP, Inc."	32.08	15333694993	n/a	Consumer Services	Real Estate Investment Trusts
-HDB	HDFC Bank Limited	115.16	1.04904E+11	n/a	Finance	Commercial Banks
 HR	Healthcare Realty Trust Incorporated	32	4134852320	n/a	Consumer Services	Real Estate Investment Trusts
 HTA	"Healthcare Trust of America, Inc."	26.82	5501254568	n/a	Consumer Services	Real Estate Investment Trusts
 HL	Hecla Mining Company	1.88	914116355.5	n/a	Basic Industries	Mining & Quarrying of Nonmetallic Minerals (No Fuels)
@@ -4928,9 +4880,7 @@ HMLP	Hoegh LNG Partners LP	18.38	610256417.6	n/a	Consumer Services	Marine Transp
 HMLP^A	Hoegh LNG Partners LP	26.59	0	n/a	n/a	n/a
 HEP	"Holly Energy Partners, L.P."	28.4	2994501708	n/a	Energy	Natural Gas Distribution
 HFC	HollyFrontier Corporation	49.6	8469963046	n/a	Energy	Integrated oil Companies
-HD	"Home Depot, Inc. (The)"	216.91	2.38663E+11	n/a	Consumer Services	RETAIL: Building Materials
 HMC	"Honda Motor Company, Ltd."	25.75	45308705664	n/a	Capital Goods	Auto Manufacturing
-HON	Honeywell International Inc.	173.61	1.24914E+11	n/a	Capital Goods	Aerospace
 HMN	Horace Mann Educators Corporation	43.34	1783649119	n/a	Finance	Property-Casualty Insurers
 HZN	Horizon Global Corporation	5.25	132631863	n/a	Capital Goods	Auto Parts:O.E.M.
 HTFA	Horizon Technology Finance Corporation	25.58	0	n/a	n/a	n/a
@@ -4941,7 +4891,6 @@ HLI	"Houlihan Lokey, Inc."	46.82	3101351884	n/a	Finance	Investment Managers
 HOV	Hovnanian Enterprises Inc	6.26	37179291.84	n/a	Capital Goods	Homebuilding
 HHC	Howard Hughes Corporation (The)	132.41	5712076170	n/a	Consumer Services	Real Estate Investment Trusts
 HPQ	HP Inc.	21.52	32415398116	n/a	Technology	Computer Manufacturing
-HSBC	HSBC Holdings plc	41.05	1.66518E+11	n/a	Finance	Savings Institutions
 HSBC^A	HSBC Holdings plc	26.31	0	n/a	n/a	n/a
 HMI	Huami Corporation	10.05	607360373.4	n/a	Technology	Computer Manufacturing
 HNP	"Huaneng Power International, Inc."	22.9	8987158426	n/a	Public Utilities	Electric Utilities: Central
@@ -4990,7 +4939,6 @@ I	Intelsat S.A.	21.71	3052426000	n/a	Consumer Services	Telecommunications Equipm
 ICE	Intercontinental Exchange Inc.	89.59	50516666783	n/a	Finance	Investment Bankers/Brokers/Service
 IHG	Intercontinental Hotels Group	70.17	12773276170	n/a	Consumer Services	Hotels/Resorts
 IFS	Intercorp Financial Services Inc.	43.16	4777504010	n/a	Finance	Commercial Banks
-IBM	International Business Machines Corporation	151.36	1.34202E+11	n/a	Technology	Computer Manufacturing
 IFF	"International Flavors & Fragrances, Inc."	146.32	15611047166	n/a	Basic Industries	Major Chemicals
 IFFT	"International Flavors & Fragrances, Inc."	54.17	0	n/a	Basic Industries	Major Chemicals
 IGT	International Game Technology	13.83	2826730337	n/a	Consumer Services	Services-Misc. Amusement & Recreation
@@ -5038,7 +4986,6 @@ ITCB	Ita? CorpBanca	11.928	4074658548	n/a	Finance	Commercial Banks
 ITUB	Itau Unibanco Banco Holding SA	9.7	94509556700	n/a	Finance	Major Banks
 ITT	ITT Inc.	64.2	5636760000	n/a	Capital Goods	Fluid Controls
 IVH	Ivy High Income Opportunities Fund	13.69	226846517.2	n/a	n/a	n/a
-JPM	J P Morgan Chase & Co	116.22	3.71613E+11	n/a	Finance	Major Banks
 JPM^A	J P Morgan Chase & Co	25.89	0	n/a	Finance	Major Banks
 JPM^C	J P Morgan Chase & Co	27.25	0	n/a	n/a	n/a
 JPM^D	J P Morgan Chase & Co	27.2201	0	n/a	n/a	n/a
@@ -5079,7 +5026,6 @@ HTD	John Hancock Tax Advantaged Dividend Income Fund	25.25	893470265.3	n/a	n/a	n
 HTY	John Hancock Tax-Advantaged Global Shareholder Yield Fund	6.94	76648392.78	n/a	n/a	n/a
 JW.A	"John Wiley & Sons, Inc."	n/a	0	n/a	n/a	n/a
 JW.B	"John Wiley & Sons, Inc."	n/a	0	n/a	n/a	n/a
-JNJ	Johnson & Johnson	130.73	3.47095E+11	n/a	Health Care	Major Pharmaceuticals
 JCI	Johnson Controls International plc	41.2	37000431305	n/a	Consumer Services	Other Consumer Services
 JLL	Jones Lang LaSalle Incorporated	144.33	7467074488	n/a	Finance	Real Estate
 JMEI	Jumei International Holding Limited	2.44	302753865.3	n/a	Consumer Services	Other Specialty Stores
@@ -5201,7 +5147,6 @@ LPT	Liberty Property Trust	52.67	7809736159	n/a	Consumer Services	Real Estate In
 LSI	"Life Storage, Inc."	97.13	4529434442	n/a	Consumer Services	Real Estate Investment Trusts
 LITB	"LightInTheBox Holding Co., Ltd."	1.4701	98832153.3	n/a	Consumer Services	Catalog/Specialty Distribution
 LNC	Lincoln National Corporation	66.64	13484155979	n/a	Finance	Life Insurance
-LIN	Linde plc	200.96	1.09074E+11	n/a	Basic Industries	Major Chemicals
 LNN	Lindsay Corporation	91.46	986518564.9	n/a	Capital Goods	Industrial Machinery/Components
 LN	LINE Corporation	32.52	7763362626	n/a	Technology	"Computer Software: Programming, Data Processing"
 LINX	Linx S.A.	8.52	1353068084	n/a	Technology	Computer Software: Prepackaged Software
@@ -5214,7 +5159,6 @@ LTHM	Livent Corporation	6.7	978208917.7	n/a	Basic Industries	Major Chemicals
 RAMP	"LiveRamp Holdings, Inc."	53.28	3678738592	n/a	Technology	EDP Services
 LYG	Lloyds Banking Group Plc	2.74	48308671088	n/a	Finance	Commercial Banks
 SCD	LMP Capital and Income Fund Inc.	13.81	248349787.3	n/a	n/a	n/a
-LMT	Lockheed Martin Corporation	369.46	1.04335E+11	n/a	Capital Goods	Military/Government/Technical
 L	Loews Corporation	54.84	16699105475	n/a	Finance	Property-Casualty Insurers
 LOMA	Loma Negra Compania Industrial Argentina Sociedad Anonima	12.2	1454304636	n/a	Capital Goods	Building Materials
 LPX	Louisiana-Pacific Corporation	26.59	3282396567	n/a	Basic Industries	Forest Products
@@ -5271,7 +5215,6 @@ MLM	"Martin Marietta Materials, Inc."	223.82	14009808552	n/a	Basic Industries	Mi
 MAS	Masco Corporation	41.5	12182278271	n/a	Basic Industries	Forest Products
 DOOR	Masonite International Corporation	54.44	1368974317	n/a	Basic Industries	Forest Products
 MTZ	"MasTec, Inc."	51.92	3960553444	n/a	Basic Industries	Water Supply
-MA	Mastercard Incorporated	282.07	2.88112E+11	n/a	Miscellaneous	Business Services
 MTDR	Matador Resources Company	16.65	1941360147	n/a	Energy	Oil & Gas Production
 MTRN	Materion Corporation	63.05	1283362574	n/a	Capital Goods	Industrial Specialties
 MATX	"Matson, Inc."	40.7	1743032974	n/a	Consumer Services	Marine Transportation
@@ -5284,7 +5227,6 @@ MBI	"MBIA, Inc."	9.51	857616108	n/a	Finance	Property-Casualty Insurers
 MKC	"McCormick & Company, Incorporated"	162.57	21544782871	n/a	Consumer Non-Durables	Packaged Foods
 MKC.V	"McCormick & Company, Incorporated"	n/a	0	n/a	Consumer Non-Durables	Packaged Foods
 MDR	"McDermott International, Inc."	10.24	1860186194	n/a	Capital Goods	Metal Fabrications
-MCD	McDonald&#39;s Corporation	215.58	1.64607E+11	n/a	Consumer Services	Restaurants
 MUX	McEwen Mining Inc.	1.82	658763048.6	n/a	Basic Industries	Precious Metals
 MCK	McKesson Corporation	138.95	25897097072	n/a	Health Care	Other Pharmaceuticals
 MDU	"MDU Resources Group, Inc."	25.9	5130358092	n/a	Basic Industries	Mining & Quarrying of Nonmetallic Minerals (No Fuels)
@@ -5300,11 +5242,9 @@ MDLQ	Medley LLC	14.31	0	n/a	Finance	Investment Managers
 MDLX	Medley LLC	14.445	0	n/a	Finance	Investment Managers
 MDLY	Medley Management Inc.	2.38	72645615.84	n/a	Finance	Investment Managers
 MD	"Mednax, Inc"	23.84	2063057171	n/a	Health Care	Hospital/Nursing Management
-MDT	Medtronic plc	102.55	1.37536E+11	n/a	Health Care	Biotechnology: Electromedical & Electrotherapeutic Apparatus
 MFAC	Megalith Financial Acquisition Corp.	10.1	213727221.1	n/a	Finance	Business Services
 MFAC.U	Megalith Financial Acquisition Corp.	n/a	0	n/a	n/a	n/a
 MFAC.WS	Megalith Financial Acquisition Corp.	n/a	0	n/a	n/a	n/a
-MRK	"Merck & Company, Inc."	81.43	2.09653E+11	n/a	Health Care	Major Pharmaceuticals
 MCY	Mercury General Corporation	62.15	3440162661	n/a	Finance	Property-Casualty Insurers
 MDP	Meredith Corporation	55.19	2492865355	n/a	Consumer Services	Newspapers/Magazines
 MTH	Meritage Corporation	64.81	2479899043	n/a	Capital Goods	Homebuilding
@@ -5463,7 +5403,6 @@ NEXA	Nexa Resources S.A.	9.09	1204793054	n/a	Basic Industries	Precious Metals
 NXRT	"NexPoint Residential Trust, Inc."	42.51	1005075705	n/a	Consumer Services	Real Estate Investment Trusts
 NHF	NexPoint Strategic Opportunities Fund	18.63	603548043.2	n/a	n/a	n/a
 NEP	"NextEra Energy Partners, LP"	49.13	2758645177	n/a	Public Utilities	Electric Utilities: Central
-NEE	"NextEra Energy, Inc."	209.17	1.00214E+11	n/a	Public Utilities	Electric Utilities: Central
 NEE^I	"NextEra Energy, Inc."	25.61	0	n/a	n/a	n/a
 NEE^J	"NextEra Energy, Inc."	25.33	0	n/a	n/a	n/a
 NEE^K	"NextEra Energy, Inc."	26.75	0	n/a	n/a	n/a
@@ -5475,7 +5414,6 @@ NGL^C	NGL ENERGY PARTNERS LP	25.48	0	n/a	n/a	n/a
 NMK^B	"Niagara Mohawk Holdings, Inc."	95.27	0	n/a	Public Utilities	Natural Gas Distribution
 NMK^C	"Niagara Mohawk Holdings, Inc."	94.98	0	n/a	Public Utilities	Natural Gas Distribution
 NLSN	Nielsen N.V.	23.55	8371884030	n/a	Miscellaneous	Business Services
-NKE	"Nike, Inc."	87.54	1.37165E+11	n/a	Consumer Non-Durables	Shoe Manufacturing
 NINE	"Nine Energy Service, Inc."	12.95	397660571	n/a	Energy	Oilfield Services/Equipment
 NIO	NIO Inc.	3.51	3688304602	n/a	Capital Goods	Auto Manufacturing
 NI	"NiSource, Inc"	29.5	11006544105	n/a	Public Utilities	Power Generation
@@ -5499,8 +5437,6 @@ NRE	NorthStar Realty Europe Corp.	17.01	855426759.4	n/a	Consumer Services	Real E
 NWN	Northwest Natural Holding Company	71.52	2071628509	n/a	Public Utilities	Oil/Gas Transmission
 NWE	NorthWestern Corporation	71.17	3589809818	n/a	Public Utilities	Power Generation
 NCLH	Norwegian Cruise Line Holdings Ltd.	49.04	10562990710	n/a	Consumer Services	Marine Transportation
-NVS	Novartis AG	93.19	2.1357E+11	n/a	Health Care	Major Pharmaceuticals
-NVO	Novo Nordisk A/S	48.84	1.15809E+11	n/a	Health Care	Major Pharmaceuticals
 DNOW	NOW Inc.	12.54	1363351120	n/a	Energy	Metal Fabrications
 NRG	"NRG Energy, Inc."	34.46	9206102132	n/a	Public Utilities	Electric Utilities: Central
 NUS	"Nu Skin Enterprises, Inc."	40.9	2269401940	n/a	Health Care	Other Pharmaceuticals
@@ -5619,7 +5555,6 @@ OKE	"ONEOK, Inc."	68.49	28269673234	n/a	Public Utilities	Oil & Gas Production
 ONE	OneSmart International Education Group Limited	7.22	1166304880	n/a	Consumer Services	Other Consumer Services
 OOMA	"Ooma, Inc."	12.2	252540000	n/a	Technology	EDP Services
 OPY	"Oppenheimer Holdings, Inc."	29.29	381449000.8	n/a	Finance	Investment Bankers/Brokers/Service
-ORCL	Oracle Corporation	58.5	1.95145E+11	n/a	Technology	Computer Software: Prepackaged Software
 ORAN	Orange	14.8	39254153842	n/a	Public Utilities	Telecommunications Equipment
 ORC	"Orchid Island Capital, Inc."	6.82	382290312.4	n/a	Consumer Services	Real Estate Investment Trusts
 OEC	Orion Engineered Carbons S.A	20.15	1199297735	n/a	Basic Industries	Major Chemicals
@@ -5690,11 +5625,9 @@ PRSP	Perspecta Inc.	23.98	3899126226	n/a	Technology	EDP Services
 PTR	PetroChina Company Limited	54.04	98904536403	n/a	Energy	Oil & Gas Production
 PBR	Petroleo Brasileiro S.A.- Petrobras	15.07	98290284368	n/a	Energy	Oil & Gas Production
 PBR.A	Petroleo Brasileiro S.A.- Petrobras	n/a	0	n/a	n/a	n/a
-PFE	"Pfizer, Inc."	43.09	2.39577E+11	n/a	Health Care	Major Pharmaceuticals
 GHY	"PGIM Global High Yield Fund, Inc."	14.5	593396245.5	n/a	n/a	n/a
 ISD	"PGIM High Yield Bond Fund, Inc."	14.67	487876141.1	n/a	n/a	n/a
 PGTI	"PGT Innovations, Inc."	16.69	973814985	n/a	Capital Goods	Building Products
-PM	Philip Morris International Inc	85.98	1.33768E+11	n/a	Consumer Non-Durables	Farming/Seeds/Milling
 PSX	Phillips 66	102.32	46407355305	n/a	Energy	Integrated oil Companies
 PSXP	Phillips 66 Partners LP	52.87	6594268220	n/a	Energy	Natural Gas Distribution
 FENG	Phoenix New Media Limited	2.91	211793420	n/a	Consumer Services	Broadcasting
@@ -5774,7 +5707,6 @@ PRIF^B	"Priority Income Fund, Inc."	25.25	0	n/a	n/a	n/a
 PRIF^C	"Priority Income Fund, Inc."	25.383	0	n/a	n/a	n/a
 PRIF^D	"Priority Income Fund, Inc."	25.27	0	n/a	n/a	n/a
 PRA	ProAssurance Corporation	37.16	1997068996	n/a	Finance	Property-Casualty Insurers
-PG	Procter & Gamble Company (The)	114.73	2.87781E+11	n/a	Basic Industries	Package Goods/Cosmetics
 PGR	Progressive Corporation (The)	81.7	47711640187	n/a	Finance	Property-Casualty Insurers
 PLD	"Prologis, Inc."	82.11	51822002190	n/a	Consumer Services	Real Estate Investment Trusts
 PUMP	ProPetro Holding Corp.	16.99	1706132436	n/a	Energy	Oilfield Services/Equipment
@@ -5933,7 +5865,6 @@ ROG	Rogers Corporation	165	3060230910	n/a	Basic Industries	Major Chemicals
 ROL	"Rollins, Inc."	34.26	11221170331	n/a	Finance	Diversified Commercial Services
 ROP	"Roper Technologies, Inc."	366.2	38026579693	n/a	Capital Goods	Industrial Machinery/Components
 RST	Rosetta Stone	22.45	534763175.7	n/a	Technology	Computer Software: Prepackaged Software
-RY	Royal Bank Of Canada	79.55	1.14228E+11	n/a	Finance	Commercial Banks
 RY^T	Royal Bank Of Canada	30.8288	0	n/a	n/a	n/a
 RBS	Royal Bank Scotland plc (The)	5.72	34580880963	n/a	Finance	Commercial Banks
 RCL	Royal Caribbean Cruises Ltd.	113.96	23891471721	n/a	Consumer Services	Marine Transportation
@@ -5960,7 +5891,6 @@ SB^D	"Safe Bulkers, Inc"	21.82	0	n/a	n/a	n/a
 SFE	"Safeguard Scientifics, Inc."	11.8	242803585	n/a	Finance	Finance/Investors Services
 SAFE	Safehold Inc.	33.28	1025754862	n/a	Consumer Services	Real Estate
 SAIL	"SailPoint Technologies Holdings, Inc."	21.88	1940266763	n/a	Technology	Computer Software: Prepackaged Software
-CRM	Salesforce.com Inc	159.97	1.24597E+11	n/a	Technology	Computer Software: Prepackaged Software
 SMM	Salient Midstream & MLP Fund	8.55	151526939	n/a	n/a	n/a
 SBH	"Sally Beauty Holdings, Inc."	12	1446971148	n/a	Consumer Services	Other Specialty Stores
 SJT	San Juan Basin Royalty Trust	3.14	146351619.4	n/a	Energy	Oil & Gas Production
@@ -5969,7 +5899,6 @@ SDT	SandRidge Mississippian Trust I	0.6076	17012800	n/a	Energy	Oil & Gas Product
 SDR	SandRidge Mississippian Trust II	0.6142	30541095	n/a	Energy	Oil & Gas Production
 PER	SandRidge Permian Trust	1.89	99225000	n/a	Energy	Oil & Gas Production
 SC	Santander Consumer USA Holdings Inc.	27.4	9638823074	n/a	Finance	Finance: Consumer Services
-SAP	SAP SE	126.99	1.56007E+11	n/a	Technology	Computer Software: Prepackaged Software
 SAB	Saratoga Investment Corp	25.79	0	n/a	n/a	n/a
 SAF	Saratoga Investment Corp	25.87	0	n/a	n/a	n/a
 SAR	Saratoga Investment Corp	25.5	204463794	n/a	n/a	n/a
@@ -6184,7 +6113,6 @@ SYX	Systemax Inc.	19.09	714515715.6	n/a	Capital Goods	Industrial Machinery/Compo
 DATA	"Tableau Software, Inc."	176.14	15376353196	n/a	Technology	Computer Software: Prepackaged Software
 TLRD	"Tailored Brands, Inc."	4.85	245017795.1	n/a	Consumer Services	Clothing/Shoe/Accessory Stores
 TWN	"Taiwan Fund, Inc. (The)"	18.15	143925833.7	n/a	n/a	n/a
-TSM	Taiwan Semiconductor Manufacturing Company Ltd.	43.46	2.25384E+11	n/a	Technology	Semiconductors
 TAK	Takeda Pharmaceutical Company Limited	16.86	52427212218	n/a	Health Care	Major Pharmaceuticals
 TAL	TAL Education Group	32.77	19372680814	n/a	Consumer Services	Other Consumer Services
 TGE	"Tallgrass Energy, LP"	21	5908020111	n/a	Public Utilities	Natural Gas Distribution
@@ -6282,7 +6210,6 @@ MSG	The Madison Square Garden Company	289.38	6875237624	n/a	Consumer Services	Se
 RUBI	"The Rubicon Project, Inc."	7.72	399713576.4	n/a	Technology	"Computer Software: Programming, Data Processing"
 TRV	"The Travelers Companies, Inc."	149.93	39039631299	n/a	Finance	Property-Casualty Insurers
 VAM	The Vivaldi Opportunities Fund	13.95	79465142.7	n/a	n/a	n/a
-TMO	Thermo Fisher Scientific Inc	287.21	1.14879E+11	n/a	Capital Goods	Industrial Machinery/Components
 THR	"Thermon Group Holdings, Inc."	25.88	844626098.2	n/a	Energy	Industrial Machinery/Components
 TPRE	Third Point Reinsurance Ltd.	10.36	977442814.3	n/a	Finance	Property-Casualty Insurers
 TSLF	THL Credit Senior Loan Fund	15.14	112323508.6	n/a	n/a	n/a
@@ -6306,7 +6233,6 @@ BLD	TopBuild Corp.	81.1	2791806594	n/a	Basic Industries	Engineering & Constructi
 TMK	Torchmark Corporation	92.93	10216772988	n/a	Finance	Life Insurance
 TMK^C	Torchmark Corporation	27.24	0	n/a	n/a	n/a
 TTC	Toro Company (The)	72.68	7735712298	n/a	Capital Goods	Tools/Hardware
-TD	Toronto Dominion Bank (The)	58.67	1.07331E+11	n/a	Finance	Commercial Banks
 SHLL	Tortoise Acquisition Corp.	9.77	284562456.2	n/a	Finance	Business Services
 SHLL.U	Tortoise Acquisition Corp.	n/a	0	n/a	n/a	n/a
 SHLL.WS	Tortoise Acquisition Corp.	n/a	0	n/a	n/a	n/a
@@ -6316,14 +6242,10 @@ TEAF	Tortoise Essential Assets Income Term Fund	17.94	242010600	n/a	n/a	n/a
 NTG	"Tortoise Midstream Energy Fund, Inc."	13.48	852048922	n/a	n/a	n/a
 TTP	"Tortoise Pipeline & Energy Fund, Inc."	14.5	145237988.5	n/a	n/a	n/a
 TPZ	"Tortoise Power and Energy Infrastructure Fund, Inc"	18.24	900680401.9	n/a	n/a	n/a
-TOT	Total S.A.	53.63	1.39603E+11	n/a	Energy	Oil & Gas Production
 TSS	"Total System Services, Inc."	136.61	24175484411	n/a	Miscellaneous	Business Services
 TOWR	"Tower International, Inc."	30.97	640783917.8	n/a	Capital Goods	Auto Parts:O.E.M.
 TSQ	"Townsquare Media, Inc."	5.27	99928786.13	n/a	Consumer Services	Broadcasting
-TM	Toyota Motor Corp Ltd Ord	131.95	1.89443E+11	n/a	Capital Goods	Auto Manufacturing
 TPGH	TPG Pace Holdings Corp.	10.3	579375000	n/a	Finance	Business Services
-TPGH.U	TPG Pace Holdings Corp.	n/a	0	n/a	n/a	n/a
-TPGH.WS	TPG Pace Holdings Corp.	n/a	0	n/a	n/a	n/a
 TRTX	"TPG RE Finance Trust, Inc."	19.71	1459749721	n/a	Consumer Services	Real Estate Investment Trusts
 TSLX	"TPG Specialty Lending, Inc."	19.76	1304774062	n/a	n/a	n/a
 TAC	TransAlta Corporation	6.03	1715662203	n/a	Public Utilities	Electric Utilities: Central
@@ -6400,22 +6322,16 @@ UA	"Under Armour, Inc."	24.17	10900958662	n/a	Consumer Non-Durables	Apparel
 UAA	"Under Armour, Inc."	27.24	12285565327	n/a	Consumer Non-Durables	Apparel
 UFI	"Unifi, Inc."	18.71	344704396	n/a	Consumer Non-Durables	Textiles
 UNF	Unifirst Corporation	194.93	3703701384	n/a	Consumer Services	Other Consumer Services
-UN	Unilever NV	58.67	1.53214E+11	n/a	Basic Industries	Package Goods/Cosmetics
-UL	Unilever PLC	60.95	1.60192E+11	n/a	Basic Industries	Package Goods/Cosmetics
-UNP	Union Pacific Corporation	174.23	1.2275E+11	n/a	Transportation	Railroads
 UIS	Unisys Corporation	10.36	536310077.5	n/a	Technology	EDP Services
 UNT	Unit Corporation	6.32	350557677.8	n/a	Energy	Oil & Gas Production
 UMC	United Microelectronics Corporation	2.07	4847211350	n/a	Technology	Semiconductors
 UNFI	"United Natural Foods, Inc."	9.87	520193178.1	n/a	Consumer Non-Durables	Food Distributors
-UPS	"United Parcel Service, Inc."	120.58	1.0379E+11	n/a	Transportation	Trucking Freight/Courier Services
 URI	"United Rentals, Inc."	127.61	9846744142	n/a	Technology	Diversified Commercial Services
 USM	United States Cellular Corporation	49.2	4248621720	n/a	Public Utilities	Telecommunications Equipment
 UZA	United States Cellular Corporation	25.66	0	n/a	Public Utilities	Telecommunications Equipment
 UZB	United States Cellular Corporation	26.45	0	n/a	Public Utilities	Telecommunications Equipment
 UZC	United States Cellular Corporation	26.56	0	n/a	Public Utilities	Telecommunications Equipment
 X	United States Steel Corporation	15.19	2618628966	n/a	Basic Industries	Steel/Iron Ore
-UTX	United Technologies Corporation	135.63	1.17036E+11	n/a	Capital Goods	Aerospace
-UNH	UnitedHealth Group Incorporated	252.94	2.4038E+11	n/a	Health Care	Medical Specialities
 UTL	UNITIL Corporation	59.78	891702690.9	n/a	Public Utilities	Power Generation
 UNVR	Univar Inc.	22.27	3779760272	n/a	Consumer Durables	Specialty Chemicals
 UVV	Universal Corporation	60.63	1515110960	n/a	Consumer Services	Farming/Seeds/Milling
@@ -6455,7 +6371,6 @@ VNE	"Veoneer, Inc."	18.11	2016949274	n/a	Capital Goods	Auto Parts:O.E.M.
 VER	VEREIT Inc.	9.22	8973891167	n/a	Consumer Services	Real Estate Investment Trusts
 VER^F	VEREIT Inc.	25.75	0	n/a	n/a	n/a
 VRTV	Veritiv Corporation	16.99	273120876.1	n/a	Consumer Services	Paper
-VZ	Verizon Communications Inc.	57.08	2.36066E+11	n/a	Public Utilities	Telecommunications Equipment
 VET	Vermilion Energy Inc.	18.46	2859382283	n/a	Energy	Oil & Gas Production
 VRS	Verso Corporation	17.03	590548015.7	n/a	Basic Industries	Paper
 VSM	"Versum Materials, Inc."	51.95	5675069794	n/a	Basic Industries	Major Chemicals
@@ -6467,7 +6382,6 @@ VIPS	Vipshop Holdings Limited	7.93	5277466783	n/a	Consumer Services	Catalog/Spec
 ZTR	Virtus Global Dividend & Income Fund Inc.	10.96	269626740.8	n/a	n/a	n/a
 VGI	Virtus Global Multi-Sector Income Fund	13.08	147859354.6	n/a	n/a	n/a
 ZF	Virtus Total Return Fund Inc.	10.85	233572159.8	n/a	n/a	n/a
-V	Visa Inc.	183.69	4.13555E+11	n/a	Miscellaneous	Business Services
 VSH	"Vishay Intertechnology, Inc."	17.09	2468408847	n/a	Capital Goods	Electrical Products
 VPG	"Vishay Precision Group, Inc."	41.36	558922454.6	n/a	Capital Goods	Electrical Products
 VSTO	Vista Outdoor Inc.	6.99	403501636.4	n/a	Capital Goods	Ordnance And Accessories
@@ -6509,8 +6423,6 @@ WBC	Wabco Holdings Inc.	132.88	6809334080	n/a	Capital Goods	Auto Manufacturing
 WDR	"Waddell & Reed Financial, Inc."	17.39	1306053743	n/a	Finance	Investment Bankers/Brokers/Service
 WAGE	"WageWorks, Inc."	51.1	2037349693	n/a	Miscellaneous	Business Services
 WD	"Walker & Dunlop, Inc."	58.67	1803904019	n/a	Finance	Finance: Consumer Services
-WMT	Walmart Inc.	113.02	3.22641E+11	n/a	Consumer Services	Department/Specialty Retail Stores
-DIS	Walt Disney Company (The)	144.65	2.60326E+11	n/a	Consumer Services	Services-Misc. Amusement & Recreation
 HCC	"Warrior Met Coal, Inc."	25.09	1293510057	n/a	Energy	Coal Mining
 WPG	Washington Prime Group Inc.	3.58	667656643	n/a	Consumer Services	Real Estate Investment Trusts
 WPG^H	Washington Prime Group Inc.	20.06	0	n/a	n/a	n/a
@@ -6531,19 +6443,6 @@ WRI	Weingarten Realty Investors	27.56	3545487894	n/a	Consumer Services	Real Esta
 WMK	"Weis Markets, Inc."	36.64	985558951.5	n/a	Consumer Services	Food Chains
 WBT	"Welbilt, Inc."	15.9	2241877549	n/a	Technology	Industrial Machinery/Components
 WCG	"WellCare Health Plans, Inc."	290.6	14620624772	n/a	Health Care	Medical Specialities
-WFC	Wells Fargo & Company	49.3	2.17886E+11	n/a	Finance	Major Banks
-WFC^L	Wells Fargo & Company	1391.2043	0	n/a	n/a	n/a
-WFC^N	Wells Fargo & Company	25.26	0	n/a	n/a	n/a
-WFC^O	Wells Fargo & Company	25.27	0	n/a	n/a	n/a
-WFC^P	Wells Fargo & Company	25.33	0	n/a	n/a	n/a
-WFC^Q	Wells Fargo & Company	26.47	0	n/a	n/a	n/a
-WFC^R	Wells Fargo & Company	29.14	0	n/a	n/a	n/a
-WFC^T	Wells Fargo & Company	25.48	0	n/a	n/a	n/a
-WFC^V	Wells Fargo & Company	26.22	0	n/a	n/a	n/a
-WFC^W	Wells Fargo & Company	26.25	0	n/a	n/a	n/a
-WFC^X	Wells Fargo & Company	25.69	0	n/a	n/a	n/a
-WFC^Y	Wells Fargo & Company	26.275	0	n/a	n/a	n/a
-WFE^A	Wells Fargo & Company	25.66	0	n/a	n/a	n/a
 EOD	Wells Fargo Global Dividend Opportunity Fund	5.44	239654489	n/a	n/a	n/a
 WELL	Welltower Inc.	83.13	33662716235	n/a	Consumer Services	Real Estate Investment Trusts
 WAIR	"Wesco Aircraft Holdings, Inc."	10.85	1082215662	n/a	Capital Goods	Wholesale Distributors

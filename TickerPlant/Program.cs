@@ -13,7 +13,6 @@ namespace TickerPlant
 	{
 		private static IServiceProvider _serviceProvider;
 		private static ILogger<Program> _log;
-		//private static TickMessages tickMessages;
 
 		public static Task Main(string[] args)
 		{
@@ -23,10 +22,10 @@ namespace TickerPlant
 			SetLogger();
 
 			var plant = _serviceProvider.GetService<IPlant>();
-
+			var symbolCount = DotNetEnv.Env.GetInt("symbols");
 			plant.TickUpdate += Plant_TickUpdate;
 			plant.Start();
-			plant.AddTicks(DotNetEnv.Env.GetInt("symbols", 10));
+			plant.AddTicks(symbolCount);
 
 			do { } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
 
