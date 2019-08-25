@@ -60,7 +60,7 @@ namespace TickerPlant
 						TimeStamp = DateTime.UtcNow
 					});
 
-					Thread.Sleep(NextInt(1, 100));
+					Thread.Sleep(NextInt(1, 10));
 				}
 			}
 			catch (Exception)

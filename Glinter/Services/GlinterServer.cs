@@ -63,6 +63,8 @@ namespace Glinter.Services
 			{
 				_plant.RemoveTick(symbol.Key);
 				_symbolUsers.Remove(symbol.Key, out _);
+
+				_logger.LogInformation($"Removed Symbol: {symbol.Key}");
 			}
 		}
 
@@ -95,6 +97,8 @@ namespace Glinter.Services
 			{
 				_userConnections.TryAdd(connection.ConnectionInfo.Id, connection);
 				_usersSymbols.TryAdd(connection.ConnectionInfo.Id, new HashSet<string>());
+
+				connection.Send(connection.ConnectionInfo.Id.ToString());
 			}
 		}
 
@@ -156,7 +160,7 @@ namespace Glinter.Services
 										userSymbols.Remove(symbol);
 									}
 
-									if (!_symbolUsers.TryGetValue(symbol, out var symbolUsers))
+									if (_symbolUsers.TryGetValue(symbol, out var symbolUsers))
 									{
 										symbolUsers.Remove(connection.ConnectionInfo.Id);
 										_symbolUsers.TryUpdate(symbol, symbolUsers, symbolUsers);
@@ -184,6 +188,9 @@ namespace Glinter.Services
 			{
 				users.Remove(connectionId);
 				_symbolUsers.TryUpdate(symbol, users, users);
+
+				_logger.LogInformation($"Removed Connection Id: {connectionId.ToString()}");
+				_logger.LogInformation($"Removed Symbol: {symbol}");
 			}
 		}
 	}
