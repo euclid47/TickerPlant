@@ -6,7 +6,7 @@ namespace TickOff.Interfaces
 	internal interface IStockSymbolReader
 	{
 		void Dispose();
-		ICollection<StockSymbol> StockSymbols { get; }
+		ICollection<StockSymbol> StockSymbols();
 
 		ICollection<StockSymbol> GetStockSymbols(bool hasHeaders);
 	}

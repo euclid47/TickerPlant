@@ -51,7 +51,8 @@ namespace TickerPlant
 
 			newSymbols.ForEach(x => _streamingSymbols.Add(x));
 
-			var newStockSymbols = GetStockSymbols().Where(x => newSymbols.Contains(x.Symbol)).ToList();
+			var stockSymbols = GetStockSymbols();
+			var newStockSymbols = stockSymbols.Where(x => newSymbols.Contains(x.Symbol)).ToList();
 
 			LoadFakers(newStockSymbols);
 
@@ -118,7 +119,7 @@ namespace TickerPlant
 		{
 			using (var reader = new StockSymbolReader())
 			{
-				return reader.StockSymbols.OrderBy(x => Guid.NewGuid()).ToList();
+				return reader.StockSymbols().OrderBy(x => Guid.NewGuid()).ToList();
 			}
 		}
 	}
