@@ -17,12 +17,13 @@ namespace Glinter
 
 		static void Main(string[] args)
 		{
+			var cancellationTokenSource = new CancellationTokenSource();
 			ConfigureServices();
 
 			try
 			{
 				_glinterServer = _serviceProvider.GetRequiredService<IGlinterServer>();
-				_glinterServer.Start();
+				_glinterServer.Start(cancellationTokenSource.Token);
 			}
 			catch (Exception e)
 			{
@@ -33,7 +34,7 @@ namespace Glinter
 			{
 			} while (Console.ReadKey(true).Key != ConsoleKey.Escape);
 
-			_glinterServer.Stop();
+			cancellationTokenSource.Cancel();
 			Console.WriteLine("Exiting in 2 seconds.");
 			Thread.Sleep(2000);
 

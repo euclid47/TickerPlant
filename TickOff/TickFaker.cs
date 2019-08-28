@@ -86,7 +86,7 @@ namespace TickerPlant
 					_tickDictionary.TryUpdate(tick.Symbol, tick, tick);
 				}
 
-				Thread.Sleep(NextInt(DotNetEnv.Env.GetInt("min",100), DotNetEnv.Env.GetInt("max", 5000)));
+				Thread.Sleep(NextInt(DotNetEnv.Env.GetInt("min",10), DotNetEnv.Env.GetInt("max", 100)));
 
 			} while (!_fakeQueue.CancellationToken.IsCancellationRequested);
 		}
