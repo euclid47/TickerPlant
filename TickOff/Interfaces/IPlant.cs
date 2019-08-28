@@ -12,5 +12,6 @@ namespace TickerPlant.Interfaces
 		void RemoveTick(string symbol);
 		void Start();
 		void Stop();
+		bool ValidSymbol(string symbol);
 	}
 }

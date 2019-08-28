@@ -47,9 +47,8 @@ namespace TickOff.Models
 		[DataMember(Name = "PercentChange")]
 		public decimal RoundedPercentChange => Math.Round(PercentChange, 4);
 
-		[IgnoreDataMember]
 		public DateTime TimeStamp { get; set; }
-		[DataMember(Name = "TimeStamp")]
+		
 		public string ConvertedTimeStamp => TimeStamp.ToString("o", CultureInfo.InvariantCulture);
 	}
 }

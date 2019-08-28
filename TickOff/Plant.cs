@@ -81,6 +81,11 @@ namespace TickerPlant
 			_streamingSymbols.Clear();
 		}
 
+		public bool ValidSymbol(string symbol)
+		{
+			return GetStockSymbols().Any(x => x.Symbol == symbol);
+		}
+
 		private void StopSymbol(string symbol)
 		{
 			_fakers.AsParallel().ForAll(x => x.StopSymbol(symbol));
